@@ -1,15 +1,18 @@
 - defaults:
     link:
       relink: true
+      clean:
+        ~:
+          force: true
 
 - clean: ['~']
 
 - link:
-    ~/.aliases:
-    ~/.gitconfig:
-    ~/.gitignore_global:
-    ~/.gittemplate:
-    ~/.zshrc:
+    ~/.aliases: dotfiles/aliases
+    ~/.gitconfig: dotfiles/gitconfig
+    ~/.gitignore_global: dotfiles/gitignore_global
+    ~/.gittemplate: dotfiles/gittemplate
+    ~/.zshrc: dotfiles/zshrc
 
 # - create:
 #     - ~/projects
