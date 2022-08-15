@@ -10,3 +10,6 @@ My dotfiles that I use for Linux and MacOS. Nothing wild, just wanted to keep a 
 5. Clone repo to local .dotfiles: `git clone git@gitlab.com:rynhndrcksn/dotfiles.git ~/.dotfiles`
 6. Navigate to .dotfiles: `cd .dotfiles`
 7. Run: `./install`
+
+## License
+Copyright (c) 2022 Ryan Hendrickson. Released under the MIT License. See LICENSE.md for details.
