@@ -1,0 +1,8 @@
+# Author: Ryan H.
+# Last Updated: August 12, 2022.
+# Filename: .aliases
+# Hold all the aliases I use/find handy.
+
+alias ll="ls -la"
+alias lla="ls -lhFA"
+alias k="clear"
