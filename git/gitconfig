@@ -1,0 +1,12 @@
+[user]
+	name = Ryan H.
+	email = 4751093-rynhndrcksn@users.noreply.gitlab.com
+[commit]
+	template = /Users/ryan/.gittemplate
+[color]
+	ui=auto
+[core]
+	excludesfile = /Users/ryan/.gitignore_global
+	autocrlf = input
+[init]
+	defaultBranch = main
