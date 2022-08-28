@@ -4,7 +4,7 @@
 # Filename: setup_homebrew.zsh
 # Installs Homebrew and installs wanted software/applications.
 
-echo ""
+echo "\n<<< Homebrew installation starting >>>\n"
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -20,3 +20,5 @@ brew install tldr
 brew install --cask firefox
 brew install --cask vscodium
 brew install --cask vagrant
+
+echo "\n<<< Homebrew installation finished >>>\n"
