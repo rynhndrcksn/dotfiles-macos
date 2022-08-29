@@ -4,7 +4,7 @@
 # Holds a bunch of imports that hold the important stuff to help keep things modular/easy to update.
 
 # Set variables
-# Syntax highlighting through 'bat'
+# Syntax highlighting for man pages via 'bat'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Change ZSH options
