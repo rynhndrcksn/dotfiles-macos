@@ -18,6 +18,8 @@ PROMPT='
 $ '
 
 # Add locations to $PATH
+export PATH="/opt/homebrew/bin:$PATH"
+
 
 #
 # Functions!
