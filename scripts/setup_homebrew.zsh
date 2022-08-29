@@ -13,11 +13,11 @@ brew install ansible
 brew install bat
 brew install go
 brew install htop
-brew install php7.4
+brew install php@7.4
 brew install tldr
 
 # Applications
-brew install --cask firefox
+#brew install --cask firefox
 brew install --cask vscodium
 brew install --cask vagrant
 
