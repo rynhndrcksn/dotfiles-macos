@@ -11,6 +11,8 @@ echo "\n<<< Homebrew installation starting >>>\n"
 # CLI tools/software
 brew install ansible
 brew install bat
+brew install docker
+brew install docker-compose
 brew install go
 brew install htop
 brew install php@7.4
