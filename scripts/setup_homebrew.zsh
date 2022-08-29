@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 # Author: Ryan H.
-# Last Updated: August 28, 2022.
 # Filename: setup_homebrew.zsh
 # Installs Homebrew and installs wanted software/applications.
 
