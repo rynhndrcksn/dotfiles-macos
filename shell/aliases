@@ -3,6 +3,6 @@
 # Filename: .aliases
 # Hold all the aliases I use/find handy.
 
-alias ll="ls -lA"
+alias ll="ls -lhF"
 alias lla="ls -lhFA"
 alias k="clear"
