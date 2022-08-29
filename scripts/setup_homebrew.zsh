@@ -18,9 +18,10 @@ brew install php@7.4
 brew install tldr
 
 # Applications
-#brew install --cask firefox
-brew install --cask lando
-brew install --cask vscodium
-brew install --cask vagrant
+brew install --cask --no-quarantine alfred
+#brew install --cask --no-quarantine firefox
+brew install --cask --no-quarantine lando
+brew install --cask --no-quarantine vscodium
+brew install --cask --no-quarantine vagrant
 
 echo "\n<<< Homebrew installation finished >>>\n"
