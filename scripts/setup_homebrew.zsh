@@ -18,6 +18,7 @@ brew install tldr
 
 # Applications
 #brew install --cask firefox
+brew install --cask lando
 brew install --cask vscodium
 brew install --cask vagrant
 
