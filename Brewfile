@@ -6,6 +6,7 @@ tap "homebrew/core"
 # Brews (packages)
 brew "ansible"
 brew "bat"
+brew "exa"
 brew "go"
 brew "htop"
 brew "php@7.4"
