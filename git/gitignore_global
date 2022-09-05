@@ -1,4 +1,6 @@
-# I primarily use Linux and MacOS for development and I almost always use JetBrains IDE's, so the following .gitignore ignores anything OS or JetBrains related.
+# Author: Ryan H.
+# Filename: gitignore_global
+# The following gitignore ignores anything JetBrains, OS, or Visual Stufio related.
 
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains+all,linux,macos,windows,visualstudio,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=jetbrains+all,linux,macos,windows,visualstudio,visualstudiocode
