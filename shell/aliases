@@ -2,6 +2,8 @@
 # Filename: .aliases
 # Hold all the aliases I use/find handy.
 
+alias exa="exa -laFH --git"
 alias ll="ls -lhF"
 alias lla="ls -lhFA"
+alias ls="exa -lFH --git"
 alias k="clear"
