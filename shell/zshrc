@@ -21,15 +21,6 @@ $ '
 export PATH="/opt/homebrew/bin:$PATH"
 
 
-#
-# Functions!
-#
-
-# Make a new directory(ies) and CD into it.
-function mkcd() {
-    mkdir -p "$@" && cd "$_";
-}
-
-# Import Oh My Zsh stuff:
+# Import Oh My Zsh stuff
 #source ~/.ohmyzsh
 

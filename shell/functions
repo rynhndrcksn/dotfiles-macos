@@ -1,0 +1,8 @@
+# Author: Ryan H.
+# Filename: .functions
+# Contains useful functions.
+
+# Make a new directory(ies) and CD into it.
+function mkcd() {
+    mkdir -p "$@" && cd "$_";
+}
