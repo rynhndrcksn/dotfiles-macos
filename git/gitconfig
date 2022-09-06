@@ -2,11 +2,11 @@
 	name = Ryan Hendrickson
 	email = 4751093-rynhndrcksn@users.noreply.gitlab.com
 [commit]
-	template = ~/.gittemplate
+	template = ~/.gitconf/gittemplate
 [color]
 	ui=auto
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitconf/gitignore_global
 	autocrlf = input
 [init]
 	defaultBranch = main

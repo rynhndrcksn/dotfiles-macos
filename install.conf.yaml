@@ -4,17 +4,21 @@
 
 - clean: ["~"]
 
+- create:
+  - ~/.config
+  - ~/.gitconf
+  - ~/.shell
+
 - link:
-    # Shell stuff
-    ~/.aliases: shell/aliases
-    ~/.config/bat:
-      create: true
-      path: config/bat
+    # Shell
+    ~/.shell/aliases: shell/aliases
+    ~/.shell/functions: shell/functions
+    ~/.config/bat: config/bat
     ~/.zshrc: shell/zshrc
     # Git
     ~/.gitconfig: git/gitconfig
-    ~/.gitignore_global: git/gitignore_global
-    ~/.gittemplate: git/gittemplate
+    ~/.gitconf/gitignore_global: git/gitignore_global
+    ~/.gitconf/gittemplate: git/gittemplate
     # Linters (when I have one 😔)
 
 # - create:
