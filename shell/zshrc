@@ -6,6 +6,7 @@
 # Syntax highlighting for man pages via 'bat'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD='bat'
 
 # Change ZSH options
 
@@ -18,7 +19,6 @@ PROMPT='
 $ '
 
 # Add locations to $PATH
-export PATH="/opt/homebrew/bin:$PATH"
 
 # Import Oh My Zsh stuff
 #source ~/.ohmyzsh
