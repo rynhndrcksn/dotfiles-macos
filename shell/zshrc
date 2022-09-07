@@ -20,9 +20,6 @@ $ '
 # Add locations to $PATH
 export PATH="/opt/homebrew/bin:$PATH"
 
-# Import functions
-source ~/.shell/functions
-
 # Import Oh My Zsh stuff
 #source ~/.ohmyzsh
 

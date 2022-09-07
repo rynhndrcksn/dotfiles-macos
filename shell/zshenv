@@ -1,0 +1,6 @@
+# Author: Ryan H.
+# Filename: .zshenv
+# Imports things needed for any and all shells.
+
+# Import functions
+source ~/.shell/functions
