@@ -11,9 +11,10 @@
 
 - link:
     # Shell
+    ~/.config/bat: config/bat
     ~/.shell/aliases: shell/aliases
     ~/.shell/functions: shell/functions
-    ~/.config/bat: config/bat
+    ~/.zshenv: shell/zshenv
     ~/.zshrc: shell/zshrc
     # Git
     ~/.gitconfig: git/gitconfig
