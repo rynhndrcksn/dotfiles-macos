@@ -2,7 +2,7 @@
 # Filename: .aliases
 # Hold all the aliases I use/find handy.
 
-alias brdump="brew bundle dump --force --describe"
+alias bbd="brew bundle dump --force --describe"
 alias exa="exa -laFH --git"
 alias ll="ls -lhF"
 alias lla="ls -lhFA"
