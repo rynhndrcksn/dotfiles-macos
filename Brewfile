@@ -27,6 +27,8 @@ cask "firefox"
 cask "gitkraken"
 # Local development environment and DevOps tool built on Docker
 cask "lando"
+# Office suite
+cask "libreoffice"
 # Development environment
 cask "vagrant"
 # Binary releases of VS Code without MS branding/telemetry/licensing
