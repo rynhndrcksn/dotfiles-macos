@@ -12,3 +12,10 @@ else
     n lts
     echo "\n<<< Node LTS and NPM installation with n finished >>>\n"
 fi
+
+echo "\n<<< Global NPM installs starting >>>\n"
+# Global NPM installs
+npm i -g typescript
+
+echo "\n<<< Global NPM installs finished >>>\n"
+npm list --global --depth=0 
