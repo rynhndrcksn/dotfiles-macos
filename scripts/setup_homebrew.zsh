@@ -3,6 +3,8 @@
 # Filename: setup_homebrew.zsh
 # Installs Homebrew and installs wanted software.
 
+echo "\n<<< Starting Homebrew setup >>>\n"
+
 if exists brew; then
     echo "\n<<< Homebrew installed already, skipping installation >>>\n"
 else
