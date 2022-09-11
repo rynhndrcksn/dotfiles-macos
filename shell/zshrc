@@ -26,7 +26,8 @@ PROMPT='
 $ '
 
 # Add locations to $PATH
-export PATH="$PATH:$N_PREFIX/bin"
+export PATH=/opt/homebrew/bin:$PATH
+export PATH="$N_PREFIX/bin:$PATH"
 
 # Import Oh My Zsh stuff
 #source ~/.ohmyzsh
