@@ -24,7 +24,7 @@ else
 fi
 
 # Change sh to be aliased to MacOS's ZSH install rather than BASH.
-# Note: Using /usr/local/bin/zsh doesn't work well, so we have to use MacOS's ZSH.
+# Note: Using Homebrew's ZSH doesn't work, so we have to use MacOS's ZSH.
 if sh --version | grep -q zsh; then
     echo '/private/var/select/sh already linked to /bin/zsh'
 else
