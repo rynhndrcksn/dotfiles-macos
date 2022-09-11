@@ -11,6 +11,8 @@ brew "exa"
 brew "go"
 # Improved top (interactive process viewer)
 brew "htop"
+# Node version management
+brew "n"
 # General-purpose scripting language
 brew "php@7.4"
 # Simplified and community-driven man pages
