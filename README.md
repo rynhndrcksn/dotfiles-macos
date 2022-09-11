@@ -1,7 +1,7 @@
 # rynhndrcksn's dotfiles
-My dotfiles that I use for Linux and MacOS. Nothing wild, just wanted to keep a backup of them.
+My dotfiles that I use for MacOS. Most of the content of this repo is in thanks to [Patrick McDonald](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/). This dotfiles were designed to run on M1 Macs and won't work with Intel ones (different Homebrew installation paths) unless you manually change stuff in the files.
 
-## Installation:
+## Installation
 1. Install Xcode Command Line Tools: `xcode-select --install`.
 2. Install [Brew](https://brew.sh/).
 3. Generate ssh key: `ssh-keygen -t ed25519` Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use: `$ ssh-keygen -t rsa -b 4096`.
@@ -11,6 +11,11 @@ My dotfiles that I use for Linux and MacOS. Nothing wild, just wanted to keep a 
 6. Clone repo to local .dotfiles: `git clone git@gitlab.com:rynhndrcksn/dotfiles.git ~/.dotfiles`.
 7. Navigate to .dotfiles: `cd .dotfiles`.
 8. Run: `./install`.
+
+## Updating Brewfile
+1. Install any software through `brew` that's needed.
+2. Run `bbd`, an alias for `brew bundle dump --force --describe`, to dump any brew installs to the `Brewfile`.
+3. Commit the changes and push them 🥳
 
 ## License
 Copyright (c) 2022 Ryan Hendrickson. Released under the MIT License. See LICENSE.md for details.
