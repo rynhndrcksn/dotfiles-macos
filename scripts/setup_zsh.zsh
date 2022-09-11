@@ -7,7 +7,7 @@ echo "\n<<< Starting ZSH setup >>>\n"
 
 echo "Enter superuser (sudo) password to add Homebrew's ZSH to /etc/shells"
 echo "This makes Homebrew's ZSH program an approved shell for MacOS to use."
-echo '/usr/local/bin/zsh' | sudo tee -a '/etc/shells'
+echo '/usr/local/bin/zsh' | sudo tee -a '/etc/shells' >/dev/null
 
 chsh -s '/usr/local/bin/zsh'
 echo "Success! Logout and back in for changes to take effect."
