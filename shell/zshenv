@@ -2,8 +2,5 @@
 # Filename: .zshenv
 # Imports things needed for any and all shells.
 
-# $PATH changes
-export PATH=/opt/homebrew/bin:$PATH
-
 # Import functions
 source ~/.shell/functions
