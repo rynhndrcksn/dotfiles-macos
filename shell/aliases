@@ -2,9 +2,10 @@
 # Filename: .aliases
 # Hold all the aliases I use/find handy.
 
-alias bbd="brew bundle dump --force --describe"
-alias exa="exa -laFh --git"
-alias ll="ls -lhF"
-alias lla="ls -lhFA"
-alias ls="exa -laFh --git"
-alias k="clear"
+alias bbd='brew bundle dump --force --describe'
+alias exa='exa -laFh --git'
+alias k='clear'
+alias ll='ls -lhF'
+alias lla='ls -lhFA'
+alias ls='exa -laFh --git'
+alias trail='<<<${(F)path}'
