@@ -1,6 +1,8 @@
 # rynhndrcksn's dotfiles
 My dotfiles that I use for MacOS. Most of the content of this repo is in thanks to [Patrick McDonald](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/). This dotfiles were designed to run on M1 Macs and won't work with Intel ones (different Homebrew installation paths) unless you manually change stuff in the files.
 
+**Important note**: these dotfiles will change all shell commands to run through ZSH as it was designed for MacOS. If using Linux/WSL you might have to do some extra configurations/problem solving. Use these at your own risks!
+
 ## Installation
 1. Install Xcode Command Line Tools: `xcode-select --install`.
 2. Install [Brew](https://brew.sh/).
