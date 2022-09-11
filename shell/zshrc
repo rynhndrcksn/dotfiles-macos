@@ -12,6 +12,9 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # Changes <<< to use bat instead of cat (default).
 export NULLCMD='bat'
 
+# Have 'n' install to ~/.n instead of /usr/local
+export N_PREFIX="$HOME/.n"
+
 # Change ZSH options
 
 # Import aliases
@@ -23,6 +26,7 @@ PROMPT='
 $ '
 
 # Add locations to $PATH
+export PATH="$PATH:$N_PREFIX/bin"
 
 # Import Oh My Zsh stuff
 #source ~/.ohmyzsh
