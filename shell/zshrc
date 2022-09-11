@@ -25,9 +25,16 @@ PROMPT='
 %n on %m in %~
 $ '
 
-# Add locations to $PATH
-export PATH=/opt/homebrew/bin:$PATH
-export PATH="$N_PREFIX/bin:$PATH"
+# Add locations to $path array
+# This forces $path to only hold unique values.
+typeset -U path
+
+# Add our special stuff to $path then add everything already in $path.
+path=(
+    "$N_PREFIX/bin"
+    "/opt/homebrew/bin"
+    $path
+)
 
 # Import Oh My Zsh stuff
 #source ~/.ohmyzsh
