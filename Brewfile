@@ -13,8 +13,6 @@ brew "go"
 brew "htop"
 # Node version management
 brew "n"
-# General-purpose scripting language
-brew "php@7.4"
 # Simplified and community-driven man pages
 brew "tldr"
 # UNIX shell (command interpreter)
@@ -23,14 +21,12 @@ brew "zsh"
 cask "alfred"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Developer platform
+cask "dotnet-sdk"
 # Web browser
 cask "firefox"
-# Git client focusing on productivity
-cask "gitkraken"
 # Local development environment and DevOps tool built on Docker
 cask "lando"
-# Office suite
-cask "libreoffice"
 # Development environment
 cask "vagrant"
 # Binary releases of VS Code without MS branding/telemetry/licensing
