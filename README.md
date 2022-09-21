@@ -20,4 +20,4 @@ My dotfiles that I use for MacOS. Most of the content of this repo is in thanks 
 3. Commit the changes and push them 🥳
 
 ## License
-Copyright (c) 2022 Ryan Hendrickson. Released under the MIT License. See LICENSE.md for details.
+Copyright (c) 2022 Ryan Hendrickson. Released under the MIT License. See [LICENSE](LICENSE) for details.
