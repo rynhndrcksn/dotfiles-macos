@@ -17,8 +17,6 @@ brew "n"
 brew "tldr"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Application launcher and productivity software
-cask "alfred"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Developer platform
