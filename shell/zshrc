@@ -2,7 +2,9 @@
 # Filename: .zshrc
 # Holds a bunch of imports that hold the important stuff to help keep things modular/easy to update.
 
-# Set variables
+#################
+# Set variables #
+#################
 # Syntax highlighting for man pages via 'bat'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
@@ -15,17 +17,25 @@ export NULLCMD='bat'
 # Have 'n' install to ~/.n instead of /usr/local
 export N_PREFIX="$HOME/.n"
 
-# Change ZSH options
+######################
+# Change ZSH options #
+######################
 
-# Import aliases
+##################
+# Import aliases #
+##################
 source ~/.shell/aliases
 
-# Customize prompt(s)
+####################
+# Customize prompt #
+####################
 PROMPT='
 %n on %m in %~
 $ '
 
-# Add locations to $path array
+##################
+# $path settings #
+##################
 # This forces $path to only hold unique values.
 typeset -U path
 
