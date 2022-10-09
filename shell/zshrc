@@ -17,6 +17,9 @@ export NULLCMD='bat'
 # Have 'n' install to ~/.n instead of /usr/local
 export N_PREFIX="$HOME/.n"
 
+# Add $DOTFILES environment variable for absolute path to repo directory 
+export DOTFILES="$HOME/.dotfiles"
+
 ######################
 # Change ZSH options #
 ######################
