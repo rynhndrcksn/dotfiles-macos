@@ -23,6 +23,9 @@ export DOTFILES="$HOME/.dotfiles"
 ######################
 # Change ZSH options #
 ######################
+setopt autoCd # Allows you to type in a directory to cd into it.
+setopt globDots # Shows hidden files/directories without typing a .
+
 
 ##################
 # Import aliases #
