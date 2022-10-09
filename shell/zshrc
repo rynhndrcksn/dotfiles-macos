@@ -17,8 +17,11 @@ export NULLCMD='bat'
 # Have 'n' install to ~/.n instead of /usr/local
 export N_PREFIX="$HOME/.n"
 
-# Add $DOTFILES environment variable for absolute path to repo directory 
+# Add $DOTFILES variable for absolute path to ~/.dotfiles.
 export DOTFILES="$HOME/.dotfiles"
+
+# Add $HOMEBREW_BUNDLE_FILE variable for saving brew bundle dump.
+export HOMEBREW_BUNDLE_FILE="$DOTFILES/Brewfile"
 
 ######################
 # Change ZSH options #
