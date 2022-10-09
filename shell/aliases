@@ -4,6 +4,7 @@
 
 alias bbd='brew bundle dump --force --describe'
 alias exa='exa -laFh --git'
+alias ftrail='<<<${(F)fpath}'
 alias k='clear'
 alias ll='ls -lhF'
 alias lla='ls -lhFA'
