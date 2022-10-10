@@ -10,16 +10,18 @@
   - ~/.shell
 
 - link:
-    # Shell
-    ~/.config/bat: config/bat
-    ~/.shell/aliases: shell/aliases
-    ~/.shell/functions: shell/functions
-    ~/.zshenv: shell/zshenv
-    ~/.zshrc: shell/zshrc
+    # Config
+    ~/.config/bat: config/bat.config
+    ~/.config/spaceship.zsh: config/spaceship.config
     # Git
     ~/.gitconfig: git/gitconfig
     ~/.gitconf/gitignore_global: git/gitignore_global
     ~/.gitconf/gittemplate: git/gittemplate
+    # Shell
+    ~/.shell/aliases: shell/aliases
+    ~/.shell/functions: shell/functions
+    ~/.zshenv: shell/zshenv
+    ~/.zshrc: shell/zshrc
     # Linters (when I have one 😔)
 
 # - create:
