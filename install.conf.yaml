@@ -31,9 +31,12 @@
   - command: scripts/setup_homebrew.zsh
     stdout: true
     stderr: true
-  - command: scripts/setup_zsh.zsh
+  - command: scripts/setup_macos.zsh
     stdout: true
     stderr: true
   - command: scripts/setup_node.zsh
+    stdout: true
+    stderr: true
+  - command: scripts/setup_zsh.zsh
     stdout: true
     stderr: true
