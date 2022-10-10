@@ -29,6 +29,15 @@ export HOMEBREW_BUNDLE_FILE="$DOTFILES/Brewfile"
 setopt autoCd # Allows you to type in a directory to cd into it.
 setopt globDots # Shows hidden files/directories without typing a .
 
+# Add "zstyles" for Completions
+# :completion:function:completer:command:argument:tag
+zstyle ':completion:*:*:*:*:*' menu select
+
+# Matches lower to upper case
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# Load "new" completion system for ZSH
+autoload -Uz compinit && compinit
 
 ##################
 # Import aliases #
