@@ -9,7 +9,7 @@
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Homebrew cask installs no longer trigger MacOS Gatekeeper.
-export HOMEBREW_CASK_OPTS="--no-quarantine"
+export HOMEBREW_CASK_OPTS="--no-quarantine --no-binaries"
 
 # Changes <<< to use bat instead of cat (default).
 export NULLCMD='bat'
