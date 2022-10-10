@@ -51,7 +51,7 @@ source ~/.shell/aliases
 # %n on %m in %~
 # $ '
 
-source $(brew --prefix)/opt/spaceship/spaceship.zsh
+source "/opt/homebrew/opt/spaceship/spaceship.zsh"
 
 ##################
 # $path settings #
