@@ -14,6 +14,8 @@ brew "go"
 brew "htop"
 # Node version management
 brew "n"
+# Zsh prompt for Astronauts
+brew "spaceship"
 # Simplified and community-driven man pages
 brew "tldr"
 # UNIX shell (command interpreter)
