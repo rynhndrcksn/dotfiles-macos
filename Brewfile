@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
@@ -23,6 +24,8 @@ cask "docker"
 cask "dotnet-sdk"
 # Web browser
 cask "firefox"
+# Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
 # Local development environment and DevOps tool built on Docker
 cask "lando"
 # Development environment
