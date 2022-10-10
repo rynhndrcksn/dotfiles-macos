@@ -65,7 +65,3 @@ path=(
     "/opt/homebrew/bin"
     $path
 )
-
-# Import Oh My Zsh stuff
-#source ~/.ohmyzsh
-
