@@ -38,9 +38,11 @@ source ~/.shell/aliases
 ####################
 # Customize prompt #
 ####################
-PROMPT='
-%n on %m in %~
-$ '
+# PROMPT='
+# %n on %m in %~
+# $ '
+
+source $(brew --prefix)/opt/spaceship/spaceship.zsh
 
 ##################
 # $path settings #
