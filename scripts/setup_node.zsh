@@ -7,6 +7,8 @@ echo "\n<<< Starting Node setup >>>\n"
 
 if exists node; then
     echo "\n<<< Node $(node --version) and NPM $(npm --version) already exists. >>>\n"
+if exists $N_PREFIX/bin/node; then
+  echo "Node $($N_PREFIX/bin/node --version) & NPM $($N_PREFIX/bin/npm --version) already installed with n"
 else
     echo "\n<<< Node LTS and NPM installation with n starting >>>\n"
     n lts
