@@ -4,3 +4,9 @@
 
 # Import functions
 source ~/.shell/functions
+
+# Homebrew cask installs no longer trigger MacOS Gatekeeper.
+export HOMEBREW_CASK_OPTS="--no-quarantine --no-binaries"
+
+# Have 'n' install to ~/.n instead of /usr/local
+export N_PREFIX="$HOME/.n"
