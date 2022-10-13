@@ -165,8 +165,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-
 killall Finder
 killall Dock
-echo "\n<<< macOS Setup Complete.
-    A logout or restart might be necessary. >>>\n"
+killall Terminal
+echo "\n<<< macOS Setup Complete -> Please restart device 😊 >>>\n"
