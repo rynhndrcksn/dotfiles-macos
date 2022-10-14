@@ -165,6 +165,11 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+# iTerm2 Settings
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/config/iterm2"
+defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool true
+
 killall Finder
 killall Dock
 killall Terminal
