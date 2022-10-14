@@ -3,6 +3,7 @@
 # Hold all the aliases I use/find handy.
 
 alias bbd='brew bundle dump --force --describe'
+alias code='codium'
 alias exa='exa -laFh --git'
 alias ftrail='<<<${(F)fpath}'
 alias k='clear'
