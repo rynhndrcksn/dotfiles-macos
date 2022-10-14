@@ -14,3 +14,6 @@ else
 fi
 
 brew bundle --verbose
+
+echo "\n<<< Installing VS Code Extensions >>>\n"
+cat ../config/vscode_extensions | xargs -L 1 code --install-extension
