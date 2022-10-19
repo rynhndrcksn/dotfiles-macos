@@ -173,4 +173,3 @@ defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -b
 killall Finder
 killall Dock
 killall Terminal
-echo "\n<<< macOS Setup Complete -> Please restart device 😊 >>>\n"
