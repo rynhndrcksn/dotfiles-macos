@@ -16,8 +16,6 @@ brew "htop"
 brew "n"
 # Zsh prompt for Astronauts
 brew "spaceship"
-# Simplified and community-driven man pages
-brew "tldr"
 # UNIX shell (command interpreter)
 brew "zsh"
 # App to build and share containerized applications and microservices
