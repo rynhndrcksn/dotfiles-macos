@@ -18,6 +18,8 @@ brew "n"
 brew "spaceship"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Voice and text chat software
+cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Developer platform
