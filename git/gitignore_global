@@ -1,6 +1,6 @@
 # Author: Ryan H.
 # Filename: gitignore_global
-# The following gitignore ignores anything JetBrains, OS, or Visual Stufio related.
+# The following gitignore ignores anything JetBrains, OS, or Visual Studio related.
 
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains+all,linux,macos,windows,visualstudio,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=jetbrains+all,linux,macos,windows,visualstudio,visualstudiocode
