@@ -28,6 +28,8 @@ cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
 # Local development environment and DevOps tool built on Docker
 cask "lando"
 # Development environment
