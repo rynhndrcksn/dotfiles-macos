@@ -1,6 +1,6 @@
 [user]
 	name = Ryan Hendrickson
-	email = 8751750+rynhndrcksn@users.noreply.github.com
+	email = 8751750+TahomaTech@users.noreply.github.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP065O1eX8H2RM2X+4BQ+BKWa70A2iyWf5IORMZSmf8N ryan@arnor
 [commit]
 	template = ~/.gitconf/gittemplate
