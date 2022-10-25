@@ -6,6 +6,10 @@ tap "homebrew/core"
 brew "ansible"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# General-purpose scripting language
+brew "php"
+# Dependency Manager for PHP
+brew "composer"
 # Modern replacement for 'ls'
 brew "exa"
 # Open source programming language to build simple/reliable/efficient software

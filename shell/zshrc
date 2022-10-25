@@ -58,6 +58,7 @@ typeset -U path
 path=(
     "$N_PREFIX/bin"
     "/opt/homebrew/bin"
+    "/opt/homebrew/sbin"
     "/Applications/VSCodium.app/Contents/Resources/app/bin"
     $path
 )
