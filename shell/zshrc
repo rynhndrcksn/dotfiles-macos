@@ -35,9 +35,10 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 autoload -Uz compinit && compinit
 
 ##################
-# Import aliases #
+# Sourcing Files #
 ##################
 source ~/.shell/aliases
+source ~/.config/completion.sh
 
 ####################
 # Customize prompt #

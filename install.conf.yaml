@@ -12,6 +12,7 @@
 - link:
     # Config
     ~/.config/bat: config/bat.config
+    ~/.config/completion.sh: config/completion.sh
     ~/.config/spaceship.zsh: config/spaceship.config
     # Git
     ~/.gitconfig: git/gitconfig
