@@ -13,7 +13,7 @@ brew "php", restart_service: true
 # Dependency Manager for PHP
 brew "composer"
 # .NET Core
-brew "dotnet"
+brew "dotnet@6"
 # Modern replacement for 'ls'
 brew "exa"
 # Open source programming language to build simple/reliable/efficient software
