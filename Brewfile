@@ -22,6 +22,8 @@ brew "go"
 brew "htop"
 # Node version management
 brew "n"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Zsh prompt for Astronauts
 brew "spaceship"
 # UNIX shell (command interpreter)
@@ -46,12 +48,16 @@ cask "jetbrains-toolbox"
 cask "lando"
 # Office suite
 cask "libreoffice"
+# Syncs files between computers and MEGA Cloud drives
+cask "megasync"
 # Document editor
 cask "onlyoffice"
 # Music streaming service
 cask "spotify"
 # Development environment
 cask "vagrant"
+# Multimedia player
+cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # Video communication and virtual meeting platform
