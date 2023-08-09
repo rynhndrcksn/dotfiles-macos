@@ -6,12 +6,13 @@
 
 - create:
   - ~/.config
+  - ~/.config/bat
   - ~/.gitconf
   - ~/.shell
 
 - link:
     # Config
-    ~/.config/bat: config/bat.config
+    ~/.config/bat/bat.config: config/bat.config
     ~/.config/completion.sh: config/completion.sh
     ~/.config/spaceship.zsh: config/spaceship.config
     # Git
@@ -24,9 +25,6 @@
     ~/.zshenv: shell/zshenv
     ~/.zshrc: shell/zshrc
     # Linters (when I have one 😔)
-
-# - create:
-#     - ~/projects
 
 - shell:
   - command: scripts/setup_homebrew.zsh
