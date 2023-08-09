@@ -31,7 +31,7 @@ echo "\n<<< Brewfile installation starting >>>\n"
 brew bundle --verbose
 
 echo "\n<<< Installing VS Code Extensions >>>\n"
-cat ../config/vscode_extensions | while read extension || [[ -n $extension ]];
+cat ./config/vscode_extensions | while read extension || [[ -n $extension ]];
 do
   codium --install-extension $extension --force
 done
