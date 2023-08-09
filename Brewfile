@@ -1,13 +1,13 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "symfony-cli/tap"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Bash scripts that integrate bat with various command-line tools
+brew "bat-extras"
 # General-purpose scripting language
 brew "php", restart_service: true
 # Dependency Manager for PHP
@@ -22,6 +22,8 @@ brew "go"
 brew "htop"
 # Node version management
 brew "n"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Zsh prompt for Astronauts
@@ -46,10 +48,12 @@ cask "iterm2"
 cask "jetbrains-toolbox"
 # Local development environment and DevOps tool built on Docker
 cask "lando"
-# Office suite
+# Free cross-platform office suite, fresh version
 cask "libreoffice"
 # Syncs files between computers and MEGA Cloud drives
 cask "megasync"
+# All-in-one calendars, tasks and scheduler
+cask "morgen"
 # Document editor
 cask "onlyoffice"
 # Music streaming service
