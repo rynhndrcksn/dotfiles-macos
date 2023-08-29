@@ -3,12 +3,14 @@
 # Hold all the aliases I use/find handy.
 
 alias bbd='brew bundle dump --force --describe'
+alias bg='batgrep'
 alias code='codium'
 alias exa='exa -laFh --git'
 alias ftrail='<<<${(F)fpath}'
 alias gsu='git submodule update --remote --merge'
 alias k='clear'
 alias ll='ls -lhF'
-alias lla='ls -lhFA'
-alias ls='exa'
+alias lla='ls -lhFa'
+alias ls='exa --git'
+alias nv='nvim'
 alias trail='<<<${(F)path}'
