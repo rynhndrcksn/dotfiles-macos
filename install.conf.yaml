@@ -12,7 +12,7 @@
 
 - link:
     # Config
-    ~/.config/bat/bat.config: config/bat/bat.config
+    ~/.config/bat/bat.conf: config/bat/bat.conf
     ~/.config/bat/themes/Catppuccin-mocha.tmTheme: config/bat/themes/Catppuccin-mocha.tmTheme
     ~/.config/completion.sh: config/completion.sh
     ~/.config/spaceship.zsh: config/spaceship.config
