@@ -30,6 +30,9 @@ fi
 echo "\n<<< Brewfile installation starting >>>\n"
 brew bundle --verbose
 
+# Rebuild 'bat' cache so it finds custom themes
+bat cache --build
+
 echo "\n<<< Installing VS Code Extensions >>>\n"
 cat ./config/vscode_extensions | while read extension || [[ -n $extension ]];
 do
