@@ -7,6 +7,9 @@
 - create:
   - ~/.config
   - ~/.config/bat
+  - ~/.config/skhd
+  - ~/.config/spaceship
+  - ~/.config/yabai
   - ~/.gitconf
   - ~/.shell
 
@@ -14,8 +17,9 @@
     # Config
     ~/.config/bat/bat.conf: config/bat/bat.conf
     ~/.config/bat/themes/Catppuccin-mocha.tmTheme: config/bat/themes/Catppuccin-mocha.tmTheme
-    ~/.config/completion.sh: config/completion.sh
-    ~/.config/spaceship.zsh: config/spaceship.config
+    ~/.config/spaceship/spaceship.zsh: config/spaceship/spaceship.config
+    ~/.config/skhd/skhdrc: config/skhd/skhdrc
+    ~/.config/yabai/yabairc: config/yabai/yabairc
     # Git
     ~/.gitconfig: git/gitconfig
     ~/.gitconf/gitignore_global: git/gitignore_global
@@ -23,20 +27,11 @@
     # Shell
     ~/.shell/aliases: shell/aliases
     ~/.shell/functions: shell/functions
+    ~/.shell/symfony_autocompletion.sh: shell/symfony_autocompletion.sh
     ~/.zshenv: shell/zshenv
     ~/.zshrc: shell/zshrc
-    # Linters (when I have one 😔)
 
 - shell:
-  - command: scripts/setup_homebrew.zsh
-    stdout: true
-    stderr: true
-  - command: scripts/setup_macos.zsh
-    stdout: true
-    stderr: true
-  - command: scripts/setup_node.zsh
-    stdout: true
-    stderr: true
-  - command: scripts/setup_zsh.zsh
+  - command: scripts/entry_point.zsh
     stdout: true
     stderr: true
