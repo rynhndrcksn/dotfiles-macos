@@ -1,0 +1,71 @@
+# Author: Ryan H.
+# Filename: yabairc
+# Contains all settings relating to Yabai for MacOS.
+# Note: This is setup to be used with SIP still enabled.
+
+# global settings
+yabai -m config mouse_follows_focus          off
+yabai -m config focus_follows_mouse          off
+yabai -m config window_topmost               on
+yabai -m config window_origin_display        default
+yabai -m config window_placement             second_child
+yabai -m config window_shadow                off
+yabai -m config window_animation_frame_rate  120
+yabai -m config window_opacity               off
+yabai -m config window_opacity_duration      0.25
+yabai -m config window_animation_duration    0.00
+yabai -m config window_zoom_persist          on
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        0.95
+yabai -m config insert_feedback_color        0xffd75f5f
+yabai -m config split_ratio                  0.5
+yabai -m config split_type                   auto
+yabai -m config auto_balance                 off
+yabai -m config mouse_modifier               alt
+yabai -m config mouse_action1                move
+yabai -m config mouse_action2                resize
+yabai -m config mouse_drop_action            swap
+
+# Border settings
+yabai -m config window_border                on
+yabai -m config window_border_width          2
+yabai -m config window_border_hidpi          on
+yabai -m config window_border_blur           off
+yabai -m config window_border_radius         8
+yabai -m config active_window_border_color   0xFFCBA6F7  # Catppuccin Mocha Mauve
+yabai -m config normal_window_border_color   0xff555555
+
+# general space settings
+yabai -m config layout                       bsp
+yabai -m config top_padding                  2
+yabai -m config bottom_padding               2
+yabai -m config left_padding                 2
+yabai -m config right_padding                2
+yabai -m config window_gap                   4
+# Set padding for sketchybar
+yabai -m config external_bar all:0:24
+
+# Setting up 9 spaces
+yabai -m space 1 --label 1
+yabai -m space 2 --label 2
+yabai -m space 3 --label 3
+yabai -m space 4 --label 4
+yabai -m space 5 --label 5
+yabai -m space 6 --label 6
+yabai -m space 7 --label 7
+yabai -m space 8 --label 8
+yabai -m space 9 --label 9
+
+# Windows that shouldn't be tiled.
+yabai -m rule --add app='^Finder$' manage=off sticky=off
+yabai -m rule --add title='Settings$' manage=off sticky=on 
+yabai -m rule --add app="^System Settings$" manage=off 
+yabai -m rule --add app="^System Information$" manage=off 
+yabai -m rule --add title="^Preferences$" manage=off
+yabai -m rule --add title="^Digital Colour Meter$" manage=off 
+yabai -m rule --add title="^General.*" manage=off   # Calendar settings
+yabai -m rule --add title="^Accounts.*" manage=off   # MacOS Mail accounts
+yabai -m rule --add title="^Disk Utility$" manage=off   # MacOS Disk utility
+yabai -m rule --add app="^App Store$" manage=off   # MacOS App Store
+yabai -m rule --add app="^Messages$" manage=off   # Messages
+yabai -m rule --add app="^Notes$" manage=off   # Apple Notes
