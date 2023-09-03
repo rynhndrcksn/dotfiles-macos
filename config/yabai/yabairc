@@ -49,8 +49,11 @@ yabai -m config window_border_width          2
 yabai -m config window_border_hidpi          on
 yabai -m config window_border_blur           off
 yabai -m config window_border_radius         8
-yabai -m config active_window_border_color   0xFFCBA6F7  # Catppuccin Mocha Mauve
-yabai -m config normal_window_border_color   0xff555555
+# This site can take hex, rgb, hsl, etc and convert it to the right format:
+# https://convertingcolors.com/
+# Then take the Android (android.graphics.Color) color and use that.
+yabai -m config active_window_border_color   0xFFCBA6F7 # Catppuccin Mocha - Mauve
+yabai -m config normal_window_border_color   0xFF1E1E2E # Catppuccin Mocha - Base
 
 # general space settings
 yabai -m config layout                       bsp
@@ -60,7 +63,7 @@ yabai -m config left_padding                 2
 yabai -m config right_padding                2
 yabai -m config window_gap                   4
 # Set padding for sketchybar
-yabai -m config external_bar all:0:24
+# yabai -m config external_bar all:0:24
 
 # Label spaces
 yabai -m space 1 --label 1
