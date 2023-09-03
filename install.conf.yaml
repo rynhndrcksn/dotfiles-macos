@@ -1,24 +1,21 @@
 - defaults:
+    clean:
+      force: true
     link:
+      create: true
       relink: true
 
-- clean: ["~"]
-
-- create:
-  - ~/.config
-  - ~/.config/bat
-  - ~/.config/skhd
-  - ~/.config/spaceship
-  - ~/.config/yabai
-  - ~/.gitconf
-  - ~/.shell
+- clean:
+    ~/:
+    ~/.config:
+      recursive: true
 
 - link:
     # Config
     ~/.config/bat/bat.conf: config/bat/bat.conf
     ~/.config/bat/themes/Catppuccin-mocha.tmTheme: config/bat/themes/Catppuccin-mocha.tmTheme
-    ~/.config/spaceship/spaceship.zsh: config/spaceship/spaceship.config
     ~/.config/skhd/skhdrc: config/skhd/skhdrc
+    ~/.config/spaceship/spaceship.zsh: config/spaceship/spaceship.config
     ~/.config/yabai/yabairc: config/yabai/yabairc
     # Git
     ~/.gitconfig: git/gitconfig
