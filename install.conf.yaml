@@ -21,7 +21,7 @@
     ~/.config/spaceship/spaceship.zsh: config/spaceship/spaceship.config
     ~/.config/yabai/yabairc: config/yabai/yabairc
     # Git
-    ~/.gitconfig: git/gitconfig
+    ~/.gitconfig: git/gitconfig_global
     ~/.gitconf/gitignore_global: git/gitignore_global
     ~/.gitconf/gittemplate: git/gittemplate
     # Shell
