@@ -106,7 +106,7 @@
 # ]
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+# alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
 
 ###################
 # Yabai shortcuts #
