@@ -16,15 +16,25 @@ brew "php", restart_service: true
 # Dependency Manager for PHP
 brew "composer"
 # .NET Core
+brew "dotnet"
+# .NET Core
 brew "dotnet@6"
-# Modern replacement for 'ls'
-brew "exa"
+# Modern, maintained replacement for ls
+brew "eza"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Node version management
 brew "n"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Zsh prompt for Astronauts
@@ -47,22 +57,14 @@ cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
 # Web browser
 cask "google-chrome"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # GPU-based terminal emulator
 cask "kitty"
 # Local development environment and DevOps tool built on Docker
 cask "lando"
-# Syncs files between computers and MEGA Cloud drives
-cask "megasync"
-# All-in-one calendars, tasks and scheduler
-cask "morgen"
 # Music streaming service
 cask "spotify"
-# Development environment
-cask "vagrant"
 # Multimedia player
 cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
