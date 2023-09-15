@@ -14,6 +14,7 @@ path=(
     "/opt/homebrew/bin"
     "/opt/homebrew/sbin"
     "/opt/homebrew/opt/dotnet@6/bin"
+    "/opt/homebrew/opt/dotnet/bin"
     "/Applications/VSCodium.app/Contents/Resources/app/bin"
     $path
 )
