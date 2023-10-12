@@ -1,6 +1,6 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 # Author: Ryan H.
-# Filename: setup_node.zsh
+# Filename: setup_node.sh
 # Installs 'n' and Node LTS.
 
 echo "\n<<< Starting Node setup >>>\n"

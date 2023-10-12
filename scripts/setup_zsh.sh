@@ -1,7 +1,7 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 # Author: Ryan H.
-# Filename: setup_zsh.zsh
-# Configures system to use Homebrew's updated ZSH vs MacOS's default ZSH..
+# Filename: setup_zsh.sh
+# Configures system to use Homebrew's updated ZSH vs MacOS's default ZSH.
 
 echo "\n<<< Starting ZSH setup >>>\n"
 

@@ -1,6 +1,6 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 # Author: Ryan H.
-# Filename: setup_homebrew.zsh
+# Filename: setup_homebrew.sh
 # Installs Homebrew and installs wanted software.
 
 echo "\n<<< Ask for sudo password up-front >>>\n"

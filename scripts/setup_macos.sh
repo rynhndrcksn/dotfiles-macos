@@ -1,4 +1,7 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
+# Author: Ryan H.
+# Filename: setup_macos.sh
+# Sets some MacOS settings
 
 echo "\n<<< Starting macOS Setup >>>\n"
 

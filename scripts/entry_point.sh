@@ -1,6 +1,6 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 # Author: Ryan H.
-# Filename: entry_point.zsh
+# Filename: entry_point.sh
 # Entry point for setting up script files.
 
 # ./setup_homebrew.zsh;
