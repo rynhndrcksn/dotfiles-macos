@@ -3,7 +3,7 @@
 # Filename: setup_macos.sh
 # Sets some MacOS settings
 
-echo "\n<<< Starting macOS Setup >>>\n"
+printf '\n<<< Starting macOS Setup >>>\n'
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -56,7 +56,7 @@ defaults write com.apple.dock "mru-spaces" -bool "false"
 defaults write com.apple.safari "ShowFullURLInSmartSearchField" -bool "true"
 
 # Screenshots > Set Location
-defaults write com.apple.screencapture "location" -string "~/Pictures/screenshots"
+defaults write com.apple.screencapture "location" -string "$HOME/Pictures/screenshots"
 
 # Time Machine > Offer New Disks for Time Machine Backup
 defaults write com.apple.TimeMachine "DoNotOfferNewDisksForBackup" -bool "true" 
@@ -170,7 +170,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # iTerm2 Settings
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/config/iterm2"
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/.dotfiles/config/iterm2"
 defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool true
 
 killall Finder
