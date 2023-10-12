@@ -37,6 +37,8 @@ brew "neovim"
 brew "pinentry-mac"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Zsh prompt for Astronauts
 brew "spaceship"
 # UNIX shell (command interpreter)
@@ -59,15 +61,17 @@ cask "font-jetbrains-mono-nerd-font"
 cask "google-chrome"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
-# GPU-based terminal emulator
-cask "kitty"
 # Local development environment and DevOps tool built on Docker
 cask "lando"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # Music streaming service
 cask "spotify"
 # Multimedia player
 cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 # Video communication and virtual meeting platform
 cask "zoom"
