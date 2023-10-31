@@ -31,6 +31,7 @@ return {
         "bashls",
         "jsonls",
         "lua_ls",
+        "marksman",
         "yamlls",
       },
       -- auto-install configured servers (with lspconfig)
