@@ -43,6 +43,10 @@ brew "shellcheck"
 brew "spaceship"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Feature-rich syntax highlighting for Zsh
+brew "zsh-fast-syntax-highlighting"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
@@ -51,8 +55,6 @@ brew "koekeishiya/formulae/yabai"
 brew "symfony-cli/tap/symfony-cli"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
-cask "docker"
 # Web browser
 cask "firefox"
 # Developer targeted fonts with a high number of glyphs
@@ -61,8 +63,6 @@ cask "font-jetbrains-mono-nerd-font"
 cask "google-chrome"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
-# Local development environment and DevOps tool built on Docker
-cask "lando"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Music streaming service

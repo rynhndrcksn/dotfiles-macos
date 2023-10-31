@@ -34,6 +34,12 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # Load "new" completion system for ZSH
 autoload -Uz compinit && compinit
 
+# source zsh-fast-syntax-highlighting
+source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
+# Source zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 ##################
 # Sourcing Files #
 ##################
