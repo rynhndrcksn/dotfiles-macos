@@ -3,6 +3,20 @@
 # Filename: setup_macos.sh
 # Sets some MacOS settings
 
+# Change laptop hostname to 
+while true; do
+    printf 'Change device hostname? '
+    read -r yn
+    case $yn in
+        [Yy]* ) printf 'What would you like the hostname to be? '
+                read -r hostname
+                sudo "scutil --set HostName $hostname"
+                break;;
+        [Nn]* ) exit;;
+        * ) printf "\nPlease answer yes or no.\n";;
+    esac
+done
+
 printf '\n<<< Starting macOS Setup >>>\n'
 
 # Close any open System Preferences panes, to prevent them from overriding
@@ -129,6 +143,7 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Enable continuous spellchecking
 defaults write com.apple.Safari WebContinuousSpellCheckingEnabled -bool true
+
 # Disable auto-correct
 defaults write com.apple.Safari WebAutomaticSpellingCorrectionEnabled -bool false
 
@@ -167,11 +182,6 @@ defaults write com.apple.terminal StringEncodings -array 4
 
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-
-# iTerm2 Settings
-defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/.dotfiles/config/iterm2"
-defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool true
 
 killall Finder
 killall Dock

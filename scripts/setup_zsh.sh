@@ -20,14 +20,13 @@ else
     printf "Enter user password to change login shell"
     chsh -s '/opt/homebrew/bin/zsh'
     printf "Success! Logout and back in for changes to take effect."
-
 fi
 
 # Change sh to be aliased to MacOS's ZSH install rather than BASH.
 # Note: Using Homebrew's ZSH doesn't work, so we have to use MacOS's ZSH.
-if sh --version | grep -q zsh; then
-    printf '/private/var/select/sh already linked to /bin/zsh'
+if sh --version | grep -q dash; then
+    printf '/private/var/select/sh already linked to /bin/dash'
 else
-    printf "Enter superuser (sudo) password to symlink sh to zsh"
-    sudo ln -sfv /bin/zsh /private/var/select/sh
+    printf 'Enter superuser (sudo) password to symlink sh to dash '
+    sudo ln -sfv /bin/dash /private/var/select/sh
 fi
