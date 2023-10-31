@@ -9,7 +9,13 @@ printf "\n<<< Setting up symbolic links for \$DOTFILES... >>>\n"
 
 CONFIG_DIR="$HOME/.config"
 DOTFILES_DIR="$HOME/.dotfiles"
-LOCAL_DIR="$HOME/.local/share"
+USER_DIR="$HOME/.local/user"
+
+# ensure some useful local directories exist and send stderr to /dev/null
+mkdir -p "$HOME/.local/bin" 2>/dev/null
+mkdir -p "$USER_DIR" 2>/dev/null
+mkdir -p "$HOME/projects" 2>/dev/null
+mkdir -p "$HOME/.tmp" 2>/dev/null
 
 ####################
 # config directory #
@@ -48,23 +54,26 @@ ln -s "$DOTFILES_DIR/config/yabai" "$CONFIG_DIR/yabai"
 #################
 
 # gitconfig
-rm -rf "$HOME/.gitconfig"
+rm "$HOME/.gitconfig"
 ln -s "$DOTFILES_DIR/git/gitconfig_global" "$HOME/.gitconfig"
 
 # gittemplate
-rm -rf "$LOCAL_DIR/.git/gittemplate"
-ln -s "$DOTFILES_DIR/git/gittemplate" "$LOCAL_DIR/.git/gittemplate"
+rm "$USER_DIR/gittemplate"
+ln -s "$DOTFILES_DIR/git/gittemplate" "$USER_DIR/gittemplate"
 
 ###################
 # shell directory #
 ###################
 
 # shell stuff
-rm -rf "$HOME/.shell"
-mkdir -p "$LOCAL_DIR/.shell"
-ln -s "$DOTFILES_DIR/shell/aliases" "$LOCAL_DIR/.shell/aliases"
-ln -s "$DOTFILES_DIR/shell/functions" "$LOCAL_DIR/.shell/functions"
-ln -s "$DOTFILES_DIR/shell/symfony_autocompletion.sh" "$LOCAL_DIR/.shell/symfony_autocompletion.sh"
+rm "$USER_DIR/aliases"
+ln -s "$DOTFILES_DIR/shell/aliases" "$USER_DIR/aliases"
+
+rm "$USER_DIR/functions"
+ln -s "$DOTFILES_DIR/shell/functions" "$USER_DIR/functions"
+
+rm "$USER_DIR/symfony_autocompletion.sh"
+ln -s "$DOTFILES_DIR/shell/symfony_autocompletion.sh" "$USER_DIR/symfony_autocompletion.sh"
 
 # .zshenv
 rm -rf "$HOME/.zshenv"
@@ -74,22 +83,16 @@ ln -s "$DOTFILES_DIR/shell/zshenv" "$HOME/.zshenv"
 rm -rf "$HOME/.zshrc"
 ln -s "$DOTFILES_DIR/shell/zshrc" "$HOME/.zshrc"
 
-printf "\n<<< Done setting up symbolic links for \$DOTFILES >>>\n"
+printf "\n<<< Done setting up symbolic links for \$DOTFILES >>>\n\n"
 
 ########
 # misc #
 ########
 
-# ensure some useful local directories exist and send stderr to /dev/null
-mkdir -p "$HOME/.local/bin" 2>/dev/null
-mkdir -p "$HOME/projects" 2>/dev/null
-mkdir -p "$HOME/.tmp" 2>/dev/null
-
 # see if we need to run entry_point.sh
 while true; do
     printf 'Run entry_point.sh? '
     read -r yn
-    # read -r 'Run entry_point.sh? ' yn
     case $yn in
         [Yy]* ) sh scripts/entry_point.sh; break;;
         [Nn]* ) exit;;

@@ -37,8 +37,8 @@ autoload -Uz compinit && compinit
 ##################
 # Sourcing Files #
 ##################
-source ~/.local/share/.shell/aliases
-source ~/.local/share/.shell/symfony_autocompletion.sh
+source ~/.local/user/aliases
+source ~/.local/user/symfony_autocompletion.sh
 
 ####################
 # Customize prompt #

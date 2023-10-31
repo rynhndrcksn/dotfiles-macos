@@ -1,13 +1,15 @@
 [user]
-	name = Ryan Hendrickson
-	email = 8751750+TahomaTech@users.noreply.github.com
-	signingkey = 7FEC213BF03FD2EF
+	name = <placeholder>
+	email = <placeholder>
+	signingkey = <placeholder>
+[color]
+  ui=auto
 [commit]
 	gpgsign = true
-	template = ~/.local/share/.git/gittemplate
-[color]
-	ui=auto
+	template = ~/.local/user/gittemplate
 [core]
 	autocrlf = input
+[include]
+  path = ~/.local/user/gitconf_local
 [init]
 	defaultBranch = main
