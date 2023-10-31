@@ -7,8 +7,9 @@
 
 printf "\n<<< Setting up symbolic links for \$DOTFILES... >>>\n"
 
-DOTFILES_DIR="$HOME/.dotfiles"
 CONFIG_DIR="$HOME/.config"
+DOTFILES_DIR="$HOME/.dotfiles"
+LOCAL_DIR="$HOME/.local/share"
 
 ####################
 # config directory #
@@ -51,8 +52,8 @@ rm -rf "$HOME/.gitconfig"
 ln -s "$DOTFILES_DIR/git/gitconfig_global" "$HOME/.gitconfig"
 
 # gittemplate
-rm -rf "$HOME/.gittemplate"
-ln -s "$DOTFILES_DIR/git/gittemplate" "$HOME/.gittemplate"
+rm -rf "$LOCAL_DIR/.git/gittemplate"
+ln -s "$DOTFILES_DIR/git/gittemplate" "$LOCAL_DIR/.git/gittemplate"
 
 ###################
 # shell directory #
@@ -60,10 +61,10 @@ ln -s "$DOTFILES_DIR/git/gittemplate" "$HOME/.gittemplate"
 
 # shell stuff
 rm -rf "$HOME/.shell"
-mkdir -p "$HOME/.shell"
-ln -s "$DOTFILES_DIR/shell/aliases" "$HOME/.shell/aliases"
-ln -s "$DOTFILES_DIR/shell/functions" "$HOME/.shell/functions"
-ln -s "$DOTFILES_DIR/shell/symfony_autocompletion.sh" "$HOME/.shell/symfony_autocompletion.sh"
+mkdir -p "$LOCAL_DIR/.shell"
+ln -s "$DOTFILES_DIR/shell/aliases" "$LOCAL_DIR/.shell/aliases"
+ln -s "$DOTFILES_DIR/shell/functions" "$LOCAL_DIR/.shell/functions"
+ln -s "$DOTFILES_DIR/shell/symfony_autocompletion.sh" "$LOCAL_DIR/.shell/symfony_autocompletion.sh"
 
 # .zshenv
 rm -rf "$HOME/.zshenv"

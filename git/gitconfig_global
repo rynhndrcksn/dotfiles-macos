@@ -4,7 +4,7 @@
 	signingkey = 7FEC213BF03FD2EF
 [commit]
 	gpgsign = true
-	template = ~/.gitconf/gittemplate
+	template = ~/.local/share/.git/gittemplate
 [color]
 	ui=auto
 [core]

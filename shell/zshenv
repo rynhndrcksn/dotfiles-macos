@@ -20,7 +20,7 @@ path=(
 )
 
 # Import functions
-source ~/.shell/functions
+source ~/.local/share/.shell/functions
 
 # Homebrew cask installs no longer trigger MacOS Gatekeeper.
 export HOMEBREW_CASK_OPTS="--no-quarantine --no-binaries"
