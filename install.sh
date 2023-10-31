@@ -45,6 +45,10 @@ ln -s "$DOTFILES_DIR/config/skhd" "$CONFIG_DIR/skhd"
 rm -rf "$CONFIG_DIR/spaceship"
 ln -s "$DOTFILES_DIR/config/spaceship" "$CONFIG_DIR/spaceship"
 
+# wezterm
+rm -rf "$CONFIG_DIR/wezterm"
+ln -s "$DOTFILES_DIR/config/wezterm" "$CONFIG_DIR/wezterm"
+
 # yabai
 rm -rf "$CONFIG_DIR/yabai"
 ln -s "$DOTFILES_DIR/config/yabai" "$CONFIG_DIR/yabai"
