@@ -37,6 +37,7 @@ config.window_decorations = "RESIZE"
 -- misc
 config.audible_bell = 'Disabled'
 config.use_dead_keys = false
+config.show_update_window = true
 config.scrollback_lines = 2500
 
 return config
