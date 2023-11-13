@@ -16,6 +16,8 @@ path=(
     "/opt/homebrew/opt/dotnet@6/bin"
     "/opt/homebrew/opt/dotnet/bin"
     "/Applications/VSCodium.app/Contents/Resources/app/bin"
+    # Herd injected PHP binary.
+    "/Users/ryan/Library/Application Support/Herd/bin/"
     $path
 )
 
@@ -33,3 +35,12 @@ export DOTNET_ROOT="$(brew --prefix)/opt/dotnet/libexec"
 
 # Set 'bat's config location
 export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
+
+# Herd injected PHP 8.2 configuration.
+export HERD_PHP_82_INI_SCAN_DIR="/Users/ryan/Library/Application Support/Herd/config/php/82/"
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/ryan/Library/Application Support/Herd/config/php/83/"
+
+# Herd injected PHP 8.1 configuration.
+export HERD_PHP_81_INI_SCAN_DIR="/Users/ryan/Library/Application Support/Herd/config/php/81/"
