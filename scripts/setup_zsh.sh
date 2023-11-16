@@ -22,8 +22,8 @@ else
     printf "Success! Logout and back in for changes to take effect."
 fi
 
-# Change sh to be aliased to MacOS's ZSH install rather than BASH.
-# Note: Using Homebrew's ZSH doesn't work, so we have to use MacOS's ZSH.
+# Change sh to use dash instead of bash. Dash is included with MacOS now
+# and is faster than bash or zsh and is POSIX compliant.
 if sh --version | grep -q dash; then
     printf '/private/var/select/sh already linked to /bin/dash'
 else
