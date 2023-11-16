@@ -2,8 +2,10 @@
 # Filename: .aliases
 # Hold all the aliases I use/find handy.
 
+alias a='php artisan'
 alias bbd='brew bundle dump --force --describe'
 alias bg='batgrep'
+alias c='php bin/console'
 alias code='codium'
 alias ftrail='<<<${(F)fpath}'
 alias ga='git add'
@@ -15,5 +17,7 @@ alias gs='git status'
 alias k='clear'
 alias ll='eza -laFgh --git --icons --color=always'
 alias lla='ls -lhFa'
+alias sh-bash='sudo ln -sfv /bin/bash /private/var/select/sh'
+alias sh-dash='sudo ln -sfv /bin/dash /private/var/select/sh'
 alias trail='<<<${(F)path}'
 alias vim='nvim'
