@@ -11,10 +11,6 @@ brew "bat"
 brew "bat-extras"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
-# General-purpose scripting language
-brew "php", restart_service: true
-# Dependency Manager for PHP
-brew "composer"
 # .NET Core
 brew "dotnet"
 # .NET Core
@@ -53,6 +49,8 @@ brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
 # Symfony CLI helps Symfony developers manage projects, from local code to remote infrastructure
 brew "symfony-cli/tap/symfony-cli"
+# Database version management tool
+cask "dbngin"
 # Voice and text chat software
 cask "discord"
 # Web browser
@@ -61,8 +59,14 @@ cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
 # Web browser
 cask "google-chrome"
+# Laravel and PHP development environment manager
+cask "herd"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
+# ZSA keyboard firmware flasher
+cask "keymapp"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Music streaming service
