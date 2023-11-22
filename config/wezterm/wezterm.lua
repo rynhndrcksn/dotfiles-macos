@@ -17,7 +17,7 @@ end
 
 -- customize tab bar
 config.window_frame = {
-  font = wezterm.font { family = 'JetBrainsMono Nerd Font', weight = 'Bold' },
+  font = wezterm.font { family = 'JetBrainsMono NF', weight = 'Bold' },
 }
 
 config.front_end = 'WebGpu'
@@ -27,7 +27,7 @@ config.animation_fps = 30
 config.color_scheme = 'Catppuccin Mocha'
 config.cursor_blink_rate = 1000
 config.default_cursor_style = 'BlinkingBar'
-config.font = wezterm.font 'JetBrainsMono Nerd Font'
+config.font = wezterm.font 'JetBrainsMono NF'
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"
 
