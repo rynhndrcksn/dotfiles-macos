@@ -13,8 +13,6 @@ brew "bat-extras"
 brew "btop"
 # .NET Core
 brew "dotnet"
-# .NET Core
-brew "dotnet@6"
 # Modern, maintained replacement for ls
 brew "eza"
 # Command-line fuzzy finder written in Go
