@@ -137,8 +137,14 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
-    -- configure yaml server
 
+    -- configure tsserver server
+    lspconfig["tsserver"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure yaml server
     lspconfig["yamlls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,

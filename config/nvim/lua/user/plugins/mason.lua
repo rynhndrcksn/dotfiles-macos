@@ -37,6 +37,7 @@ return {
         "marksman",
         "phpactor",
         "tailwindcss",
+        "tsserver",
         "yamlls",
       },
       -- auto-install configured servers (with lspconfig)
