@@ -75,6 +75,24 @@ return {
       on_attach = on_attach,
     })
 
+    -- configure cssls server
+    lspconfig["cssls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure gopls server
+    lspconfig["gopls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure html server
+    lspconfig["html"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     -- configure json server
     lspconfig["jsonls"].setup({
       capabilities = capabilities,
@@ -108,7 +126,19 @@ return {
       on_attach = on_attach,
     })
 
+    -- configure phpactor server
+    lspconfig["phpactor"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure tailwindcss server
+    lspconfig["tailwindcss"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
     -- configure yaml server
+
     lspconfig["yamlls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,

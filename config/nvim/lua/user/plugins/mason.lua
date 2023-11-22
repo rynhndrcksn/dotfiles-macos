@@ -29,9 +29,14 @@ return {
       -- list can be found here: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
       ensure_installed = {
         "bashls",
+        "cssls",
+        "gopls",
+        "html",
         "jsonls",
         "lua_ls",
         "marksman",
+        "phpactor",
+        "tailwindcss",
         "yamlls",
       },
       -- auto-install configured servers (with lspconfig)
@@ -44,7 +49,7 @@ return {
         "bash-language-server", -- self explanatory
         "prettier", -- prettier formatter
         "shellcheck", -- bash formatter/linter
-        -- "stylua", -- lua formatter
+        "stylua", -- lua formatter
         -- "isort", -- python formatter
         -- "black", -- python formatter
         -- "pylint", -- python linter

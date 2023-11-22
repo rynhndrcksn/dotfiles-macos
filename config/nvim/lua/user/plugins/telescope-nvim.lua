@@ -17,7 +17,7 @@ return {
       defaults = {
         path_display = { "truncate " },
         prompt_prefix = '   ',
-        file_ignore_patterns = { '.git/', 'vendor', 'node_modules' },
+        file_ignore_patterns = { '.git/', 'vendor/', 'node_modules/' },
         mappings = {
           i = {
             ["<esc>"] = actions.close, -- close window with a single esc press vs 2
