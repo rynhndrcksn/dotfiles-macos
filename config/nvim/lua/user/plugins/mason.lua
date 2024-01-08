@@ -47,14 +47,13 @@ return {
     -- list can be found here: https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim
     mason_tool_installer.setup({
       ensure_installed = {
-        "bash-language-server", -- self explanatory
-        "prettier", -- prettier formatter
-        "shellcheck", -- bash formatter/linter
-        "stylua", -- lua formatter
-        -- "isort", -- python formatter
-        -- "black", -- python formatter
-        -- "pylint", -- python linter
-        -- "eslint_d", -- js linter
+        -- "bash-language-server", -- self explanatory
+        "golangci-lint",     -- go linter
+        "markdownlint-cli2", -- markdown linter
+        "phpstan",           -- php linter
+        "prettier",          -- prettier formatter
+        "shellcheck",        -- sh linter
+        "stylua",            -- lua formatter
       },
     })
   end,

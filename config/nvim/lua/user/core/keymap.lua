@@ -2,10 +2,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- todo: figure out what this does later
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-
 -- Allow gf to open non-existent files.
 vim.keymap.set('', 'gf', ':edit <cfile><CR>')
 
@@ -57,6 +53,11 @@ vim.keymap.set('n', '<C-k>', ':move .-2<CR>==')
 vim.keymap.set('v', '<C-j>', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
 
+-- easily move lines up and down while in visual mode
+-- whoops, these did pretty much what the above did 😅
+-- vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+-- vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 vim.keymap.set("n", "Q", "<nop>")
 -- vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
@@ -72,3 +73,8 @@ vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current t
 vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- one off keybindings:
+
+-- open URL under cursor
+vim.keymap.set('n', 'gx', [[:silent execute '!$BROWSER ' . shellescape(expand('<cfile>'), 1)<CR>]])
