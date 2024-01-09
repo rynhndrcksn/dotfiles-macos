@@ -1,0 +1,157 @@
+" Author: Ryan Hendrickson
+" Filename: .ideavimrc
+" Description: Contains my config for IdeaVim
+
+""""""""""""""""""""
+" General Settings "
+""""""""""""""""""""
+
+" leave x lines on top/bottom before scrolling window up/down
+set scrolloff=10
+
+" show relative line numbers on files, alternative is: set linenumber
+set relativenumber
+
+" show what mode we're currently in
+set showmode
+
+" show what command is being executed
+set showcmd
+
+" turn off annoying audible bell
+set visualbell
+
+" user system clipboard
+set clipboard+=unnamed
+
+" when searching, ignore case
+set ignorecase
+
+" if search string has uppercase, become case-sensitive search
+set smartcase
+
+" incremental search, self explanatory
+set incsearch
+
+" when searching, highlight results
+set hlsearch
+
+" assign leader key to <space>
+let mapleader = ' '
+
+"""""""""""""""""""
+" Plugin Settings "
+"""""""""""""""""""
+
+" easily change 'surrounds' -> ( [ { ' "
+set surround
+
+" gives vim controls for file explorer (e.g. hjkl for navigation)
+set nerdtree
+
+
+"""""""""""""""""""
+" Keymap Settings "
+"""""""""""""""""""
+
+" while navigating, keep things centered 
+" go down half page
+nnoremap <C-d> <C-d>zz
+" go up half page
+nnoremap <C-u> <C-u>zz
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" reselect visual selection after indenting.
+vnoremap < <gv
+vnoremap > >gv
+
+" maintain the cursor position when yanking a visual selection.
+" http://ddrscott.github.io/blog/2016/yank-without-jank/
+vnoremap y myy`y
+vnoremap y myY`y
+
+" disable annoying command line thing.
+nnoremap q: :q<CR>
+
+" paste replace visual selection without copying it.
+vnoremap p _dP
+
+" easy insertion of a trailing ; or ,
+nnoremap ;; A;<ESC>
+nnoremap ,, A,<ESC>
+inoremap ;; A;<ESC>
+inoremap ,, A,<ESC>
+
+" quickly clear search highlighting.
+nnoremap <leader>k :nohlsearch<CR>
+
+" copies content to system clipboard vs nvim one
+nnoremap <leader>y [["+y"]]
+vnoremap <leader>y [["+y"]]
+nnoremap <leader>Y [["+Y"]]
+
+" move text up and down
+inoremap <C-j> <Esc>:move .+1<CR>==gi
+inoremap <C-k> <Esc>:move .-2<CR>==gi
+nnoremap <C-j> :move .+1<CR>==
+nnoremap <C-k> :move .-1<CR>==
+vnoremap <C-j> :move '>+1<CR>gv=gv
+vnoremap <C-k> :move '<-1<CR>gv=gv
+" vim.keymap.set('i', '<C-j>', '<Esc>:move .+1<CR>==gi')
+" vim.keymap.set('i', '<C-k>', '<Esc>:move .-2<CR>==gi')
+" vim.keymap.set('n', '<C-j>', ':move .+1<CR>==')
+" vim.keymap.set('n', '<C-k>', ':move .-2<CR>==')
+" vim.keymap.set('v', '<C-j>', ":move '>+1<CR>gv=gv")
+" vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
+
+" Tab navigation
+nnoremap <A-n> :tabnext<CR>
+nnoremap <A-p> :tabprev<CR>\
+nnoremap <A-x> :tabclose<CR>
+
+" Pane navigation
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+nnoremap <A-k> <C-w>k
+nnoremap <A-j> <C-w>j
+
+" Popup navigation
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
+
+" Open NERDTree (use q to exit)
+map <leader>en :NERDTreeToggle<CR>
+
+" Window splits
+map <leader>wv <Action>(SplitVertically)
+map <leader>ws <Action>(SplitHorizontally)
+map <leader>wu <Action>(Unsplit)
+map <leader>wm <Action>(MoveEditorToOppositeTabGroup)
+
+" File navigation
+map <leader>ff <action>(GotoFile)
+map <leader>fr <action>(RecentFiles)
+map <leader>fp <action>(FindInPath)
+map <leader>fl <action>(RecentLocations)
+map <leader>fs <action>(NewScratchFile)
+
+" Refactoring
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+
+" Go to code
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+nmap <leader>gu <Action>(ShowUsages)
+nmap <leader>gt <Action>(GotoTest)
+nmap <leader>gf <Action>(Back)
+nmap <leader>gb <Action>(Forward)
+
+" open URL under cursor
+nnoremap gx [[:silent execute '!$BROWSER ' . shellescape(expand('<cfile>'), 1)<CR>]]

@@ -29,6 +29,10 @@ ln -s "$DOTFILES_DIR/config/bat" "$CONFIG_DIR/bat"
 rm -rf "$CONFIG_DIR/btop"
 ln -s "$DOTFILES_DIR/config/btop" "$CONFIG_DIR/btop"
 
+# ideavim
+rm -rf "$HOME/.ideavimrc"
+ln -s "$DOTFILES_DIR/config/ideavim/.ideavimrc" "$HOME/.ideavimrc"
+
 # kitty
 rm -rf "$CONFIG_DIR/kitty"
 ln -s "$DOTFILES_DIR/config/kitty" "$CONFIG_DIR/kitty"
