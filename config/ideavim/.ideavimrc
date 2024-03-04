@@ -10,7 +10,7 @@
 set scrolloff=10
 
 " show relative line numbers on files, alternative is: set linenumber
-set relativenumber
+set linenumber
 
 " show what mode we're currently in
 set showmode

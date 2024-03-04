@@ -139,6 +139,7 @@ return {
     lspconfig["phpactor"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      -- root_dir = lspconfig.util.root_pattern("./*.php", "composer.json", ".git"),
     })
 
     -- configure tailwindcss server

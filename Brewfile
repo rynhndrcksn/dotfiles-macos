@@ -11,6 +11,10 @@ brew "bat"
 brew "bat-extras"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# General-purpose scripting language
+brew "php", restart_service: true
+# Dependency Manager for PHP
+brew "composer"
 # .NET Core
 brew "dotnet"
 # Modern, maintained replacement for ls
@@ -27,24 +31,26 @@ brew "n"
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Libraries for security-enabled client and server applications
+brew "nss"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Command-line deletion tool focused on safety, ergonomics, and performance
+brew "rm-improved"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Zsh prompt for Astronauts
 brew "spaceship"
+# Internet file retriever
+brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Feature-rich syntax highlighting for Zsh
 brew "zsh-fast-syntax-highlighting"
-# Simple hotkey-daemon for macOS.
-brew "koekeishiya/formulae/skhd"
-# A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
 # Symfony CLI helps Symfony developers manage projects, from local code to remote infrastructure
 brew "symfony-cli/tap/symfony-cli"
 # Database version management tool
@@ -55,10 +61,10 @@ cask "discord"
 cask "firefox"
 # Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
+# Game development engine
+cask "godot"
 # Web browser
 cask "google-chrome"
-# Laravel and PHP development environment manager
-cask "herd"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # ZSA keyboard firmware flasher
@@ -67,6 +73,10 @@ cask "keymapp"
 cask "logseq"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
+# Window snapping tool
+cask "rectangle-pro"
 # Music streaming service
 cask "spotify"
 # Multimedia player
