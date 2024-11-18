@@ -1,10 +1,7 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "symfony-cli/tap"
-# Automate deployment, configuration, and upgrading
-brew "ansible"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Bash scripts that integrate bat with various command-line tools
@@ -15,12 +12,12 @@ brew "btop"
 brew "php", restart_service: true
 # Dependency Manager for PHP
 brew "composer"
-# .NET Core
-brew "dotnet"
 # Modern, maintained replacement for ls
 brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Distributed revision control system
+brew "git"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
@@ -59,31 +56,22 @@ cask "dbngin"
 cask "discord"
 # Web browser
 cask "firefox"
-# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
-# Game development engine
-cask "godot"
 # Web browser
 cask "google-chrome"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # ZSA keyboard firmware flasher
 cask "keymapp"
-# Privacy-first, open-source platform for knowledge sharing and management
-cask "logseq"
-# Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
-# Imaging utility to install operating systems to a microSD card
-cask "raspberry-pi-imager"
 # Window snapping tool
 cask "rectangle-pro"
 # Music streaming service
 cask "spotify"
+# Web browser with built-in email client focusing on customization and control
+cask "vivaldi"
 # Multimedia player
 cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
-# Video communication and virtual meeting platform
-cask "zoom"
