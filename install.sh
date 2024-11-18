@@ -80,9 +80,6 @@ ln -s "$DOTFILES_DIR/shell/aliases" "$USER_DIR/aliases"
 rm "$USER_DIR/functions"
 ln -s "$DOTFILES_DIR/shell/functions" "$USER_DIR/functions"
 
-rm "$USER_DIR/symfony_autocompletion.sh"
-ln -s "$DOTFILES_DIR/shell/symfony_autocompletion.sh" "$USER_DIR/symfony_autocompletion.sh"
-
 # .zshenv
 rm -rf "$HOME/.zshenv"
 ln -s "$DOTFILES_DIR/shell/zshenv" "$HOME/.zshenv"
@@ -102,7 +99,7 @@ while true; do
     printf 'Run entry_point.sh? '
     read -r yn
     case $yn in
-        [Yy]* ) sh scripts/entry_point.sh; break;;
+        [Yy]* ) sh "$HOME/.dotfiles/scripts/entry_point.sh"; break;;
         [Nn]* ) exit;;
         * ) printf "\nPlease answer yes or no.\n";;
     esac

@@ -44,7 +44,7 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Sourcing Files #
 ##################
 source ~/.local/user/aliases
-source ~/.local/user/symfony_autocompletion.sh
+eval "$(symfony self:completion zsh)"
 
 ####################
 # Customize prompt #
