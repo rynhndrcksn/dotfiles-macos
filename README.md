@@ -18,4 +18,5 @@ My dotfiles that I use for MacOS. Eventually I might make this an OS agnostic `.
 3. Commit the changes and push them 🥳
 
 ## License
+
 Copyright (c) 2022 Ryan Hendrickson. Released under the MIT License. See [LICENSE](LICENSE) for details.

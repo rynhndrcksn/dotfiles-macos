@@ -1,106 +1,25 @@
 #!/usr/bin/env sh
 # Author: Ryan H.
 # Filename: install.sh
-# Setup the symbolic links for the files 🎉
-# Then ask if user wants to do 'first time setup'
-# which triggers scripts/entry_point.sh
+# Displays options for the installer to execute.
 
-printf "\n<<< Setting up symbolic links for \$DOTFILES... >>>\n"
-
-CONFIG_DIR="$HOME/.config"
-DOTFILES_DIR="$HOME/.dotfiles"
-USER_DIR="$HOME/.local/user"
-
-# ensure some useful local directories exist and send stderr to /dev/null
-mkdir -p "$HOME/.local/bin" 2>/dev/null
-mkdir -p "$USER_DIR" 2>/dev/null
-mkdir -p "$HOME/projects" 2>/dev/null
-mkdir -p "$HOME/.tmp" 2>/dev/null
-
-####################
-# config directory #
-####################
-
-# bat
-rm -rf "$CONFIG_DIR/bat"
-ln -s "$DOTFILES_DIR/config/bat" "$CONFIG_DIR/bat"
-
-# btop
-rm -rf "$CONFIG_DIR/btop"
-ln -s "$DOTFILES_DIR/config/btop" "$CONFIG_DIR/btop"
-
-# ideavim
-rm -rf "$HOME/.ideavimrc"
-ln -s "$DOTFILES_DIR/config/ideavim/.ideavimrc" "$HOME/.ideavimrc"
-
-# kitty
-rm -rf "$CONFIG_DIR/kitty"
-ln -s "$DOTFILES_DIR/config/kitty" "$CONFIG_DIR/kitty"
-
-# nvim
-rm -rf "$CONFIG_DIR/nvim"
-ln -s "$DOTFILES_DIR/config/nvim" "$CONFIG_DIR/nvim"
-
-# skhd
-rm -rf "$CONFIG_DIR/skhd"
-ln -s "$DOTFILES_DIR/config/skhd" "$CONFIG_DIR/skhd"
-
-# spaceship
-rm -rf "$CONFIG_DIR/spaceship"
-ln -s "$DOTFILES_DIR/config/spaceship" "$CONFIG_DIR/spaceship"
-
-# wezterm
-rm -rf "$CONFIG_DIR/wezterm"
-ln -s "$DOTFILES_DIR/config/wezterm" "$CONFIG_DIR/wezterm"
-
-# yabai
-rm -rf "$CONFIG_DIR/yabai"
-ln -s "$DOTFILES_DIR/config/yabai" "$CONFIG_DIR/yabai"
-
-#################
-# git directory #
-#################
-
-# gitconfig
-rm "$HOME/.gitconfig"
-ln -s "$DOTFILES_DIR/git/gitconfig_global" "$HOME/.gitconfig"
-
-# gittemplate
-rm "$USER_DIR/gittemplate"
-ln -s "$DOTFILES_DIR/git/gittemplate" "$USER_DIR/gittemplate"
-
-###################
-# shell directory #
-###################
-
-# shell stuff
-rm "$USER_DIR/aliases"
-ln -s "$DOTFILES_DIR/shell/aliases" "$USER_DIR/aliases"
-
-rm "$USER_DIR/functions"
-ln -s "$DOTFILES_DIR/shell/functions" "$USER_DIR/functions"
-
-# .zshenv
-rm -rf "$HOME/.zshenv"
-ln -s "$DOTFILES_DIR/shell/zshenv" "$HOME/.zshenv"
-
-# .zshrc
-rm -rf "$HOME/.zshrc"
-ln -s "$DOTFILES_DIR/shell/zshrc" "$HOME/.zshrc"
-
-printf "\n<<< Done setting up symbolic links for \$DOTFILES >>>\n\n"
-
-########
-# misc #
-########
-
-# see if we need to run entry_point.sh
 while true; do
-    printf 'Run entry_point.sh? '
-    read -r yn
-    case $yn in
-        [Yy]* ) sh "$HOME/.dotfiles/scripts/entry_point.sh"; break;;
-        [Nn]* ) exit;;
-        * ) printf "\nPlease answer yes or no.\n";;
+    printf '\nThese are the available options:\n'
+    printf '\t0) Execute every command\n'
+    printf '\t1) Setup symlinks\n'
+    printf '\t2) Install packages\n'
+    printf '\t3) Setup n, a node version manager\n'
+    printf '\t4) Setup Symfony CLI with curl\n'
+    printf '\tQ) Exit the installer\n'
+    printf '\nPlease enter your selection: '
+    read -r opt
+    case $opt in
+        [0]* ) sh "$HOME/.dotfiles/scripts/everything.sh"; continue;;
+        [1]* ) sh "$HOME/.dotfiles/scripts/setup_symlinks.sh"; continue;;
+        [2]* ) sh "$HOME/.dotfiles/scripts/install_packages.sh"; continue;;
+        [3]* ) sh "$HOME/.dotfiles/scripts/setup_n.sh"; continue;;
+        [4]* ) curl -sS https://get.symfony.com/cli/installer | bash; continue;;
+        [Qq]* ) printf '\nA terminal restart may be necessary for changes to take affect\n'; exit;;
+        * ) printf '\n\nPlease enter a valid option\n';;
     esac
 done

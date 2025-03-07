@@ -36,6 +36,7 @@ return {
         "lua_ls",
         "marksman",
         "phpactor",
+        "rust_analyzer",
         "tailwindcss",
         "ts_ls",
         "yamlls",

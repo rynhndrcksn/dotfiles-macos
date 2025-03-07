@@ -13,9 +13,6 @@ path=(
     "$N_PREFIX/bin"
     "/opt/homebrew/bin"
     "/opt/homebrew/sbin"
-    "/opt/homebrew/opt/dotnet@6/bin"
-    "/opt/homebrew/opt/dotnet/bin"
-    "/Applications/VSCodium.app/Contents/Resources/app/bin"
     $path
 )
 
@@ -33,4 +30,3 @@ export DOTNET_ROOT="$(brew --prefix)/opt/dotnet/libexec"
 
 # Set 'bat's config location
 export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
-

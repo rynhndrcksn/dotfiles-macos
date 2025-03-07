@@ -9,7 +9,7 @@ brew "bat-extras"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php"
 # Dependency Manager for PHP
 brew "composer"
 # Modern, maintained replacement for ls
@@ -24,8 +24,6 @@ brew "gnupg"
 brew "go"
 # Node version management
 brew "n"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Libraries for security-enabled client and server applications
@@ -50,6 +48,8 @@ brew "zsh-autosuggestions"
 brew "zsh-fast-syntax-highlighting"
 # Symfony CLI helps Symfony developers manage projects, from local code to remote infrastructure
 brew "symfony-cli/tap/symfony-cli"
+# Opensource IDE for exploring and testing api's
+cask "bruno"
 # Database version management tool
 cask "dbngin"
 # Voice and text chat software
@@ -59,6 +59,8 @@ cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
 # Web browser
 cask "google-chrome"
+# Laravel and PHP development environment manager
+cask "herd"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # ZSA keyboard firmware flasher
@@ -75,3 +77,5 @@ cask "vlc"
 cask "vscodium"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
+# Multiplayer code editor
+cask "zed"
