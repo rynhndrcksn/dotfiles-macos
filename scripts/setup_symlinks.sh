@@ -55,6 +55,12 @@ if [ -d "$CONFIG_DIR/wezterm" ]; then
 fi
 ln -s "$DOTFILES_DIR/config/wezterm" "$CONFIG_DIR/wezterm"
 
+# zed
+if [ -d "$CONFIG_DIR/zed" ]; then
+    rm -rf "$CONFIG_DIR/zed"
+fi
+ln -s "$DOTFILES_DIR/config/zed" "$CONFIG_DIR/zed"
+
 #################
 # git directory #
 #################
@@ -99,4 +105,3 @@ fi
 ln -s "$DOTFILES_DIR/shell/zshrc" "$HOME/.zshrc"
 
 printf "\n<<< Done setting up symbolic links for \$DOTFILES >>>\n\n"
-

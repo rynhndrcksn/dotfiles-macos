@@ -1,0 +1,12 @@
+{
+  "Declare strict types": {
+    "prefix": "strict",
+    "body": ["declare(strict_types = 1);", "$0"],
+    "description": "Declare strict types"
+  },
+  "Predump": {
+    "prefix": "predump",
+    "body": ["echo '<pre>';\nvar_dump($1)\necho '</pre>';", "$0"],
+    "description": "Log warning to the console"
+  }
+}
