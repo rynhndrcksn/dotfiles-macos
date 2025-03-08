@@ -6,7 +6,7 @@
   },
   "Predump": {
     "prefix": "predump",
-    "body": ["echo '<pre>';\nvar_dump($1)\necho '</pre>';", "$0"],
+    "body": ["echo '<pre>';", "var_dump($1);", "echo '</pre>';", "$0"],
     "description": "Log warning to the console"
   }
 }

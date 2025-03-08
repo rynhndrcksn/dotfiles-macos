@@ -14,7 +14,7 @@
   },
   "base_keymap": "JetBrains",
   "icon_theme": "Catppuccin Mocha",
-  "vim_mode": false,
+  "vim_mode": true,
   "restore_on_startup": "none",
   "ui_font_size": 14,
   "buffer_font_size": 14,
@@ -23,5 +23,8 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Catppuccin Mocha"
+  },
+  "file_types": {
+    "Blade": ["*.blade.php"]
   }
 }
