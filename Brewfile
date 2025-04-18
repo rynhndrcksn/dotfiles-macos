@@ -1,7 +1,4 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "koekeishiya/formulae"
-tap "symfony-cli/tap"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Bash scripts that integrate bat with various command-line tools
@@ -38,6 +35,8 @@ brew "rm-improved"
 brew "shellcheck"
 # Zsh prompt for Astronauts
 brew "spaceship"
+# Build, run, and manage Symfony applications
+brew "symfony-cli"
 # Internet file retriever
 brew "wget"
 # UNIX shell (command interpreter)
@@ -46,9 +45,7 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Feature-rich syntax highlighting for Zsh
 brew "zsh-fast-syntax-highlighting"
-# Symfony CLI helps Symfony developers manage projects, from local code to remote infrastructure
-brew "symfony-cli/tap/symfony-cli"
-# Opensource IDE for exploring and testing api's
+# Open source IDE for exploring and testing APIs
 cask "bruno"
 # Database version management tool
 cask "dbngin"
