@@ -77,3 +77,5 @@ path=(
     "/opt/homebrew/sbin"
     $path
 )
+
+. "$HOME/.cargo/env"
