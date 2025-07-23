@@ -6,7 +6,7 @@ My dotfiles that I use for MacOS. Eventually I might make this an OS agnostic `.
 ## Installation
 1. Install Xcode Command Line Tools: `xcode-select --install`.
 2. Test connection with `ssh -T git@github.com`.
-3. Clone repo to local ~/.dotfiles directory: `git clone git@github.com:TahomaTech/dotfiles-macos.git ~/.dotfiles`.
+3. Clone repo to local ~/.dotfiles directory: `git clone git@github.com:rynhndrcksn/dotfiles-macos.git ~/.dotfiles`.
 4. Navigate to .dotfiles: `cd ~/.dotfiles`.
 5. Run: `./install`.
 6. Make `~/.local/user/gitconf_local` with git 'user' info (name, email, signingkey, etc).
