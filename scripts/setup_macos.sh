@@ -91,8 +91,8 @@ defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
 # Keep Folders on Top on Desktop
 defaults write com.apple.finder "_FXSortFoldersFirstOnDesktop" -bool "true"
 
-# Save to Documents by Default
-defaults write NSGlobalDomain "NSDocumentSaveNewDocumentsToCloud" -bool "true"
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Show Extensions
 defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
@@ -172,9 +172,6 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 # Show Full URL
 defaults write com.apple.safari "ShowFullURLInSmartSearchField" -bool "true"
 
-# Update extensions automatically
-defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
-
 ########
 # Mail #
 ########
@@ -202,9 +199,6 @@ defaults write com.apple.terminal StringEncodings -array 4
 ###########
 # General #
 ###########
-
-# Save to disk (not to iCloud) by default
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
@@ -325,12 +319,9 @@ defaults write com.apple.dock showhidden -bool true
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
 
-# Mission Control > Rearrange Automatically
-defaults write com.apple.dock "mru-spaces" -bool "false"
-
-###############################################################################
-# Activity Monitor                                                            #
-###############################################################################
+####################
+# Activity Monitor #
+####################
 
 # Show the main window when launching Activity Monitor
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
