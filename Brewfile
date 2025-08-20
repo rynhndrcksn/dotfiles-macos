@@ -47,8 +47,6 @@ brew "zsh-autosuggestions"
 brew "zsh-fast-syntax-highlighting"
 # Open source IDE for exploring and testing APIs
 cask "bruno"
-# Database version management tool
-cask "dbngin"
 # Voice and text chat software
 cask "discord"
 # Web browser
@@ -56,16 +54,12 @@ cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
 # Web browser
 cask "google-chrome"
-# Laravel and PHP development environment manager
-cask "herd"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # ZSA keyboard firmware flasher
 cask "keymapp"
 # Window snapping tool
 cask "rectangle-pro"
-# Music streaming service
-cask "spotify"
 # Web browser with built-in email client focusing on customization and control
 cask "vivaldi"
 # Multimedia player
