@@ -28,6 +28,7 @@ return {
       -- list of servers for mason to install
       -- list can be found here: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
       ensure_installed = {
+        "ansiblels",
         "bashls",
         "cssls",
         "gopls",
@@ -49,6 +50,7 @@ return {
     mason_tool_installer.setup({
       ensure_installed = {
         -- "bash-language-server", -- self explanatory
+        "ansible-lint",      -- ansible linter
         "golangci-lint",     -- go linter
         "markdownlint-cli2", -- markdown linter
         "phpstan",           -- php linter

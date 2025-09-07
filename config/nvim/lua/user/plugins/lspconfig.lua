@@ -78,6 +78,12 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
+    -- configure ansible server
+    lspconfig["ansiblels"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     -- configure bash server
     lspconfig["bashls"].setup({
       capabilities = capabilities,
