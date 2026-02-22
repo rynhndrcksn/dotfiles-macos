@@ -10,6 +10,7 @@ while true; do
     printf '\t2) Install packages\n'
     printf '\t3) Setup n, a node version manager\n'
     printf '\t4) Setup Symfony CLI with curl\n'
+    printf '\t5) Install Rust viw curl\n'
     printf '\tQ) Exit the installer\n'
     printf '\nPlease enter your selection: '
     read -r opt
@@ -19,6 +20,7 @@ while true; do
         [2]* ) sh "$HOME/.dotfiles/scripts/install_packages.sh"; continue;;
         [3]* ) sh "$HOME/.dotfiles/scripts/setup_n.sh"; continue;;
         [4]* ) curl -sS https://get.symfony.com/cli/installer | bash; continue;;
+        [5]* ) curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh;;
         [Qq]* ) printf '\nA terminal restart may be necessary for changes to take affect\n'; exit;;
         * ) printf '\n\nPlease enter a valid option\n';;
     esac
