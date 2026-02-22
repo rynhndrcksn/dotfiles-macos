@@ -1,4 +1,6 @@
 tap "koekeishiya/formulae"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Bash scripts that integrate bat with various command-line tools
@@ -11,14 +13,18 @@ brew "php"
 brew "composer"
 # Modern, maintained replacement for ls
 brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Distributed revision control system
 brew "git"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Post-modern modal text editor
+brew "helix"
 # Node version management
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -41,10 +47,10 @@ brew "symfony-cli"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Fish-like fast/unobtrusive autosuggestions for zsh
-brew "zsh-autosuggestions"
 # Feature-rich syntax highlighting for Zsh
 brew "zsh-fast-syntax-highlighting"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Open source IDE for exploring and testing APIs
 cask "bruno"
 # Voice and text chat software
@@ -64,9 +70,7 @@ cask "rectangle-pro"
 cask "vivaldi"
 # Multimedia player
 cask "vlc"
-# Binary releases of VS Code without MS branding/telemetry/licensing
-cask "vscodium"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
-# Multiplayer code editor
-cask "zed"
+# Video communication and virtual meeting platform
+cask "zoom"
