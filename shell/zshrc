@@ -40,9 +40,6 @@ autoload -Uz compinit && compinit
 # source zsh-fast-syntax-highlighting
 source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
-# Source zsh-autosuggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 ##################
 # Sourcing Files #
 ##################
@@ -52,6 +49,8 @@ source ~/.local/user/aliases
 
 # Load symfony-cli completions.
 eval "$(symfony self:completion zsh)"
+
+source <(fzf --zsh)
 
 ####################
 # Customize prompt #
@@ -70,6 +69,7 @@ typeset -U path
 
 # Add our special stuff to $path then add everything already in $path.
 path=(
+    "$HOME/.local/bin"
     "$N_PREFIX/bin"
     "$HOME/go/bin"
     "$HOME/.cargo/env"
