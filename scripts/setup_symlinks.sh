@@ -31,6 +31,12 @@ if [ -d "$CONFIG_DIR/btop" ]; then
 fi
 ln -s "$DOTFILES_DIR/config/btop" "$CONFIG_DIR/btop"
 
+# helix
+if [ -d "$CONFIG_DIR/helix" ]; then
+    rm -rf "$CONFIG_DIR/helix"
+fi
+ln -s "$DOTFILES_DIR/config/helix" "$CONFIG_DIR/helix"
+
 # ideavim
 if [ -f "$HOME/.ideavimrc" ]; then
     rm -rf "$HOME/.ideavimrc"
@@ -55,24 +61,18 @@ if [ -d "$CONFIG_DIR/wezterm" ]; then
 fi
 ln -s "$DOTFILES_DIR/config/wezterm" "$CONFIG_DIR/wezterm"
 
-# zed
-if [ -d "$CONFIG_DIR/zed" ]; then
-    rm -rf "$CONFIG_DIR/zed"
-fi
-ln -s "$DOTFILES_DIR/config/zed" "$CONFIG_DIR/zed"
-
 #################
 # git directory #
 #################
 
 # gitconfig
-if [ -d "$HOME/.gitconfig" ]; then
+if [ -f "$HOME/.gitconfig" ]; then
     rm "$HOME/.gitconfig"
 fi
 ln -s "$DOTFILES_DIR/git/gitconfig_global" "$HOME/.gitconfig"
 
 # gittemplate
-if [ -d "$USER_DIR/gittemplate" ]; then
+if [ -f "$USER_DIR/gittemplate" ]; then
     rm "$USER_DIR/gittemplate"
 fi
 ln -s "$DOTFILES_DIR/git/gittemplate" "$USER_DIR/gittemplate"
@@ -82,24 +82,24 @@ ln -s "$DOTFILES_DIR/git/gittemplate" "$USER_DIR/gittemplate"
 ###################
 
 # shell stuff
-if [ -d "$USER_DIR/aliases" ]; then
+if [ -f "$USER_DIR/aliases" ]; then
     rm "$USER_DIR/aliases"
 fi
 ln -s "$DOTFILES_DIR/shell/aliases" "$USER_DIR/aliases"
 
-if [ -d "$USER_DIR/functions" ]; then
+if [ -f "$USER_DIR/functions" ]; then
     rm "$USER_DIR/functions"
 fi
 ln -s "$DOTFILES_DIR/shell/functions" "$USER_DIR/functions"
 
 # .zshenv
-if [ -d "$HOME/.zshenv" ]; then
+if [ -f "$HOME/.zshenv" ]; then
     rm -rf "$HOME/.zshenv"
 fi
 ln -s "$DOTFILES_DIR/shell/zshenv" "$HOME/.zshenv"
 
 # .zshrc
-if [ -d "$HOME/.zshrc" ]; then
+if [ -f "$HOME/.zshrc" ]; then
     rm -rf "$HOME/.zshrc"
 fi
 ln -s "$DOTFILES_DIR/shell/zshrc" "$HOME/.zshrc"

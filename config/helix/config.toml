@@ -1,0 +1,9 @@
+theme = "catppuccin_mocha"
+
+[editor]
+trim-trailing-whitespace = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"

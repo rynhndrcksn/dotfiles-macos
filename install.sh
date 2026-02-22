@@ -4,7 +4,7 @@
 # Displays options for the installer to execute.
 
 while true; do
-    printf '\nThese are the available options:\n'
+    printf 'These are the available options:\n'
     printf '\t0) Execute every command\n'
     printf '\t1) Setup symlinks\n'
     printf '\t2) Install packages\n'
