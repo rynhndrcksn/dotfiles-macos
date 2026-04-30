@@ -7,3 +7,6 @@ trim-trailing-whitespace = true
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.file-picker]
+hidden = false
