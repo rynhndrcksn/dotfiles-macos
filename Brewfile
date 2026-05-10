@@ -25,12 +25,16 @@ brew "gnupg"
 brew "go"
 # Post-modern modal text editor
 brew "helix"
+# Language Server Protocol for Markdown
+brew "marksman"
 # Node version management
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Libraries for security-enabled client and server applications
 brew "nss"
+# General-purpose scripting language
+brew "php@8.4"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Search tool like grep and The Silver Searcher
@@ -43,16 +47,18 @@ brew "shellcheck"
 brew "spaceship"
 # Build, run, and manage Symfony applications
 brew "symfony-cli"
+# TOML toolkit written in Rust
+brew "taplo"
 # Internet file retriever
 brew "wget"
+# Language Server for Yaml Files
+brew "yaml-language-server"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Feature-rich syntax highlighting for Zsh
 brew "zsh-fast-syntax-highlighting"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Open source IDE for exploring and testing APIs
-cask "bruno"
 # Voice and text chat software
 cask "discord"
 # Web browser
@@ -70,7 +76,11 @@ cask "rectangle-pro"
 cask "vivaldi"
 # Multimedia player
 cask "vlc"
+# Live wallpaper app
+cask "wallspace"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 # Video communication and virtual meeting platform
 cask "zoom"
+go "github.com/codesenberg/bombardier"
+cargo "systemd-lsp"
