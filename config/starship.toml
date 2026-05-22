@@ -1,0 +1,47 @@
+add_newline = true
+
+format = """
+$directory$git_branch$git_status$fill$status$battery$time
+$character"""
+
+[fill]
+symbol = " "
+
+# Section Configuration
+
+[battery]
+charging_symbol = "🔌"
+disabled = false
+discharging_symbol = "🔋"
+[[battery.display]]
+style = "bold text"
+threshold = 100
+
+[character]
+error_symbol = "[>>](bold red)"
+success_symbol = "[>>](bold green)"
+
+[cmd_duration]
+format = "took [$duration]($style)"
+min_time = 1000
+
+[git_status]
+ahead = "↑${count}"
+behind = "↓${count}"
+deleted = "-${count}"
+format = "([\\[$all_status$ahead_behind\\]]($style) )"
+modified = "!${count}"
+staged = "+${count}"
+style = "bold red"
+
+[status]
+disabled = false
+format = "[$symbol$status]($style) "
+style = "bold read"
+symbol = "❌"
+
+[time]
+disabled = false
+format = "at [$time]($style) "
+style = "bold yellow"
+

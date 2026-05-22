@@ -43,8 +43,8 @@ brew "ripgrep"
 brew "rm-improved"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
-# Zsh prompt for Astronauts
-brew "spaceship"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Build, run, and manage Symfony applications
 brew "symfony-cli"
 # TOML toolkit written in Rust
@@ -64,6 +64,8 @@ cask "discord"
 # Web browser
 cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Web browser
 cask "google-chrome"
 # JetBrains tools manager
@@ -76,11 +78,15 @@ cask "rectangle-pro"
 cask "vivaldi"
 # Multimedia player
 cask "vlc"
-# Live wallpaper app
-cask "wallspace"
-# GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm"
 # Video communication and virtual meeting platform
 cask "zoom"
 go "github.com/codesenberg/bombardier"
 cargo "systemd-lsp"
+npm "@ansible/ansible-language-server"
+npm "@microsoft/compose-language-service"
+npm "bash-language-server"
+npm "corepack"
+npm "dockerfile-language-server-nodejs"
+npm "typescript-language-server"
+npm "typescript"
+npm "vscode-langservers-extracted"

@@ -31,6 +31,12 @@ if [ -d "$CONFIG_DIR/btop" ]; then
 fi
 ln -s "$DOTFILES_DIR/config/btop" "$CONFIG_DIR/btop"
 
+# ghostty
+if [ -d "$CONFIG_DIR/ghostty" ]; then
+    rm -rf "$CONFIG_DIR/ghostty"
+fi
+ln -s "$DOTFILES_DIR/config/ghostty" "$CONFIG_DIR/ghostty"
+
 # helix
 if [ -d "$CONFIG_DIR/helix" ]; then
     rm -rf "$CONFIG_DIR/helix"
@@ -49,11 +55,11 @@ if [ -d "$CONFIG_DIR/nvim" ]; then
 fi
 ln -s "$DOTFILES_DIR/config/nvim" "$CONFIG_DIR/nvim"
 
-# spaceship
-if [ -d "$CONFIG_DIR/spaceship" ]; then
-    rm -rf "$CONFIG_DIR/spaceship"
+# Starship
+if [ -f "$CONFIG_DIR/starship.toml" ]; then
+    rm "$CONFIG_DIR/starship.toml"
 fi
-ln -s "$DOTFILES_DIR/config/spaceship" "$CONFIG_DIR/spaceship"
+ln -s "$DOTFILES_DIR/config/starship.toml" "$CONFIG_DIR/starship.toml"
 
 # wezterm
 if [ -d "$CONFIG_DIR/wezterm" ]; then
